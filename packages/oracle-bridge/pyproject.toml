@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waqf-oracle-bridge"
+version = "0.1.0"
+description = "Deterministic SHA-256 Merkle oracle, UU PDP privacy shield, and PSAK 412 snapshot relayer for WAQF DAO"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "WAQF DAO Contributors"}
+]
+dependencies = []
+
+[project.scripts]
+waqf-oracle = "waqf_oracle.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["waqf_oracle*"]

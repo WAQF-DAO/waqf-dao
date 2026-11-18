@@ -1,0 +1,404 @@
+{
+  "schema": "waqf-dao.genesis-fixture.v1",
+  "epoch_code": "2026-11",
+  "snapshot_date": "2026-11-18",
+  "institution_name": "Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)",
+  "psak412_metrics": {
+    "total_assets_idr": 1404880000,
+    "temp_waqf_liabilities_idr": 63000000,
+    "net_assets_idr": 1341880000,
+    "reconciliation_diff_idr": 0,
+    "nazhir_cash_fee_ratio": 0.085,
+    "mauquf_alaih_ratio": 0.825,
+    "sroi_ratio_bps": 41100
+  },
+  "genesis_pools": [
+    "WPUD",
+    "WPUM",
+    "WPAIR",
+    "WPPAL",
+    "WPMAS"
+  ],
+  "pool_allocations_idr": {
+    "WPUD": 450000000,
+    "WPUM": 310000000,
+    "WPAIR": 284880000,
+    "WPPAL": 210000000,
+    "WPMAS": 150000000
+  },
+  "merkle_root": "0x8847ae1a98d62b44dbbfe44900cce0620b7e13914d9bd509d3d694f8fb3921cc",
+  "leaf_count": 10,
+  "leaves": [
+    {
+      "index": 0,
+      "leaf_type": "waqf.psak412_summary",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.psak412_summary",
+        "sequence": 0,
+        "snapshot_date": "2026-11-18",
+        "institution_name": "Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)",
+        "total_assets_idr": 1404880000,
+        "temp_waqf_liabilities_idr": 63000000,
+        "net_assets_idr": 1341880000,
+        "reconciliation_diff_idr": 0,
+        "nazhir_cash_fee_bps": 850,
+        "mauquf_alaih_bps": 8250,
+        "sroi_ratio_bps": 41100,
+        "pool_allocations_idr": {
+          "WPAIR": 284880000,
+          "WPMAS": 150000000,
+          "WPPAL": 210000000,
+          "WPUD": 450000000,
+          "WPUM": 310000000
+        },
+        "components": {
+          "statement_of_financial_position": {
+            "total_assets_idr": 1404880000,
+            "temp_waqf_liabilities_idr": 63000000,
+            "net_assets_idr": 1341880000,
+            "reconciliation_diff_idr": 0
+          },
+          "statement_of_activity": {
+            "waqf_receipts_idr": 797880000,
+            "mauquf_alaih_disbursement_idr": 83500000,
+            "nazhir_cash_fee_ratio_bps": 850,
+            "mauquf_alaih_ratio_bps": 8250
+          },
+          "statement_of_cash_flows": {
+            "operating_inflow_idr": 797880000,
+            "productive_investing_idr": 644880000,
+            "distribution_outflow_idr": 83500000,
+            "closing_cash_idr": 760000000
+          },
+          "statement_of_managed_assets": {
+            "WPAIR": 284880000,
+            "WPMAS": 150000000,
+            "WPPAL": 210000000,
+            "WPUD": 450000000,
+            "WPUM": 310000000
+          },
+          "notes_and_sroi_disclosure": {
+            "sroi_ratio_bps": 41100,
+            "shariah_standard": "AAOIFI SS-60 / PSAK 412 / UU 41-2004",
+            "framework": "WAQF Framework (Wijhah - 'Azam - Qiyam - Fahs)",
+            "institutional_anchor": "Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)",
+            "ecosystem_anchors": [
+              "PT Produktif Indonesia Berdaya (PT PIB)",
+              "Forum Wakaf Produktif (FWP)",
+              "Asosiasi Nazhir Indonesia (ANI)"
+            ]
+          }
+        }
+      },
+      "canonical_json": "{\"components\":{\"notes_and_sroi_disclosure\":{\"ecosystem_anchors\":[\"PT Produktif Indonesia Berdaya (PT PIB)\",\"Forum Wakaf Produktif (FWP)\",\"Asosiasi Nazhir Indonesia (ANI)\"],\"framework\":\"WAQF Framework (Wijhah - 'Azam - Qiyam - Fahs)\",\"institutional_anchor\":\"Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)\",\"shariah_standard\":\"AAOIFI SS-60 / PSAK 412 / UU 41-2004\",\"sroi_ratio_bps\":41100},\"statement_of_activity\":{\"mauquf_alaih_disbursement_idr\":83500000,\"mauquf_alaih_ratio_bps\":8250,\"nazhir_cash_fee_ratio_bps\":850,\"waqf_receipts_idr\":797880000},\"statement_of_cash_flows\":{\"closing_cash_idr\":760000000,\"distribution_outflow_idr\":83500000,\"operating_inflow_idr\":797880000,\"productive_investing_idr\":644880000},\"statement_of_financial_position\":{\"net_assets_idr\":1341880000,\"reconciliation_diff_idr\":0,\"temp_waqf_liabilities_idr\":63000000,\"total_assets_idr\":1404880000},\"statement_of_managed_assets\":{\"WPAIR\":284880000,\"WPMAS\":150000000,\"WPPAL\":210000000,\"WPUD\":450000000,\"WPUM\":310000000}},\"epoch\":\"2026-11\",\"institution_name\":\"Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)\",\"leaf_type\":\"waqf.psak412_summary\",\"mauquf_alaih_bps\":8250,\"nazhir_cash_fee_bps\":850,\"net_assets_idr\":1341880000,\"pool_allocations_idr\":{\"WPAIR\":284880000,\"WPMAS\":150000000,\"WPPAL\":210000000,\"WPUD\":450000000,\"WPUM\":310000000},\"reconciliation_diff_idr\":0,\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":0,\"snapshot_date\":\"2026-11-18\",\"sroi_ratio_bps\":41100,\"temp_waqf_liabilities_idr\":63000000,\"total_assets_idr\":1404880000}",
+      "leaf_hash": "0x2b0dfc67c8e76aa2796375e367393518f53b964e61d28e45eedc116691e37b5f",
+      "proof": [
+        "0x31b8e40571b877fdb8d902feddc412bbbea742ad343886066e2a05569176d2c5",
+        "0xfc52f2089df873ca0e7b51bf63bbdfb6fcd59aab7b63614af70ce97beb9d1ba6",
+        "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 1,
+      "leaf_type": "waqf.pledge",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.pledge",
+        "sequence": 1,
+        "aiw_number": "AIW-YAPI-2026-0001",
+        "pledge_type": "AIW",
+        "pool_code": "WPUD",
+        "amount_idr": 450000000,
+        "dated_at": "2026-11-01",
+        "waqf_tenure": "permanent",
+        "wakif_commitment": "0xf434c783c62beadae68a90362dc262cfe1fba2d9af8a086bbe8c9b1d25669e7f"
+      },
+      "canonical_json": "{\"aiw_number\":\"AIW-YAPI-2026-0001\",\"amount_idr\":450000000,\"dated_at\":\"2026-11-01\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.pledge\",\"pledge_type\":\"AIW\",\"pool_code\":\"WPUD\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":1,\"wakif_commitment\":\"0xf434c783c62beadae68a90362dc262cfe1fba2d9af8a086bbe8c9b1d25669e7f\",\"waqf_tenure\":\"permanent\"}",
+      "leaf_hash": "0x31b8e40571b877fdb8d902feddc412bbbea742ad343886066e2a05569176d2c5",
+      "proof": [
+        "0x2b0dfc67c8e76aa2796375e367393518f53b964e61d28e45eedc116691e37b5f",
+        "0xfc52f2089df873ca0e7b51bf63bbdfb6fcd59aab7b63614af70ce97beb9d1ba6",
+        "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 2,
+      "leaf_type": "waqf.pledge",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.pledge",
+        "sequence": 2,
+        "aiw_number": "APAIW-YAPI-2026-0002",
+        "pledge_type": "APAIW",
+        "pool_code": "WPAIR",
+        "amount_idr": 284880000,
+        "dated_at": "2026-11-05",
+        "waqf_tenure": "permanent",
+        "wakif_commitment": "0x0460b947f03f32ca1f8575666dff4cad425c61dfb95a17cd43068a3c008ea312"
+      },
+      "canonical_json": "{\"aiw_number\":\"APAIW-YAPI-2026-0002\",\"amount_idr\":284880000,\"dated_at\":\"2026-11-05\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.pledge\",\"pledge_type\":\"APAIW\",\"pool_code\":\"WPAIR\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":2,\"wakif_commitment\":\"0x0460b947f03f32ca1f8575666dff4cad425c61dfb95a17cd43068a3c008ea312\",\"waqf_tenure\":\"permanent\"}",
+      "leaf_hash": "0x54b600761b00b187dfc1a8393f95b86d57abffca0167fdc70d4c413f96eebe0b",
+      "proof": [
+        "0xfc491b6c055790b0cb5cf03038c2925acfc9d9bc0c7d52f500b8c2960b2b926d",
+        "0x3ef7fdcd9c391f5b6f0d61893564dbbd26236c4fb90ee9d0a61c992fce363a4b",
+        "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 3,
+      "leaf_type": "waqf.pledge",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.pledge",
+        "sequence": 3,
+        "aiw_number": "APAIW-YAPI-2026-0003",
+        "pledge_type": "APAIW",
+        "pool_code": "WPUM",
+        "amount_idr": 63000000,
+        "dated_at": "2026-11-08",
+        "waqf_tenure": "temporary",
+        "wakif_commitment": "0x7c46f677683a1afec0c33a58a39e556ecb6a5912d402b42bd43c12828fcb8f4b"
+      },
+      "canonical_json": "{\"aiw_number\":\"APAIW-YAPI-2026-0003\",\"amount_idr\":63000000,\"dated_at\":\"2026-11-08\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.pledge\",\"pledge_type\":\"APAIW\",\"pool_code\":\"WPUM\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":3,\"wakif_commitment\":\"0x7c46f677683a1afec0c33a58a39e556ecb6a5912d402b42bd43c12828fcb8f4b\",\"waqf_tenure\":\"temporary\"}",
+      "leaf_hash": "0xfc491b6c055790b0cb5cf03038c2925acfc9d9bc0c7d52f500b8c2960b2b926d",
+      "proof": [
+        "0x54b600761b00b187dfc1a8393f95b86d57abffca0167fdc70d4c413f96eebe0b",
+        "0x3ef7fdcd9c391f5b6f0d61893564dbbd26236c4fb90ee9d0a61c992fce363a4b",
+        "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 4,
+      "leaf_type": "waqf.asset",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.asset",
+        "sequence": 4,
+        "asset_code": "ASSET-BPN-WPAIR-001",
+        "asset_class": "CLEAN_WATER_INFRASTRUCTURE",
+        "certificate_ref": "BPN-SHW-2026-0411",
+        "pool_code": "WPAIR",
+        "book_value_idr": 284880000,
+        "valuation_basis": "PSAK_412_FAIR_VALUE"
+      },
+      "canonical_json": "{\"asset_class\":\"CLEAN_WATER_INFRASTRUCTURE\",\"asset_code\":\"ASSET-BPN-WPAIR-001\",\"book_value_idr\":284880000,\"certificate_ref\":\"BPN-SHW-2026-0411\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.asset\",\"pool_code\":\"WPAIR\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":4,\"valuation_basis\":\"PSAK_412_FAIR_VALUE\"}",
+      "leaf_hash": "0x1dfa8535ee9d18abfad160af5bf9e117941819952986be676a3954c0997acea4",
+      "proof": [
+        "0x74909a541a6f4a5c51fc693f537954132c2a2567c832bcbb4130cc225005d060",
+        "0x3c38f5d013d9e264c1b54b010565396dffb182863aa23ed97019137b9a987b87",
+        "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 5,
+      "leaf_type": "waqf.asset",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.asset",
+        "sequence": 5,
+        "asset_code": "ASSET-BPN-WPPAL-002",
+        "asset_class": "PRODUCTIVE_AGRICULTURE_LAND",
+        "certificate_ref": "BPN-SHW-2026-0412",
+        "pool_code": "WPPAL",
+        "book_value_idr": 210000000,
+        "valuation_basis": "PSAK_412_FAIR_VALUE"
+      },
+      "canonical_json": "{\"asset_class\":\"PRODUCTIVE_AGRICULTURE_LAND\",\"asset_code\":\"ASSET-BPN-WPPAL-002\",\"book_value_idr\":210000000,\"certificate_ref\":\"BPN-SHW-2026-0412\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.asset\",\"pool_code\":\"WPPAL\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":5,\"valuation_basis\":\"PSAK_412_FAIR_VALUE\"}",
+      "leaf_hash": "0x74909a541a6f4a5c51fc693f537954132c2a2567c832bcbb4130cc225005d060",
+      "proof": [
+        "0x1dfa8535ee9d18abfad160af5bf9e117941819952986be676a3954c0997acea4",
+        "0x3c38f5d013d9e264c1b54b010565396dffb182863aa23ed97019137b9a987b87",
+        "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 6,
+      "leaf_type": "waqf.asset",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.asset",
+        "sequence": 6,
+        "asset_code": "ASSET-PROD-WPMAS-003",
+        "asset_class": "MOSQUE_EDUCATION_SOLAR_ASSET",
+        "certificate_ref": "AIW-INV-2026-0413",
+        "pool_code": "WPMAS",
+        "book_value_idr": 150000000,
+        "valuation_basis": "PSAK_412_FAIR_VALUE"
+      },
+      "canonical_json": "{\"asset_class\":\"MOSQUE_EDUCATION_SOLAR_ASSET\",\"asset_code\":\"ASSET-PROD-WPMAS-003\",\"book_value_idr\":150000000,\"certificate_ref\":\"AIW-INV-2026-0413\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.asset\",\"pool_code\":\"WPMAS\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":6,\"valuation_basis\":\"PSAK_412_FAIR_VALUE\"}",
+      "leaf_hash": "0xcf751d3877b6a9ccf5b5e1c28aafc5adcf0877f904f70356ca17c25f8adbc29b",
+      "proof": [
+        "0x1e7bb1754c6b451bd924a9b1b7afeb1c0e858de312d87ff03471dace8f94d806",
+        "0x86061d659bc3dfcca4795e21e3c6b9f658218e9e7641382c0762f3587cb49a1c",
+        "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 7,
+      "leaf_type": "waqf.distribution",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.distribution",
+        "sequence": 7,
+        "bast_number": "BAST-2026-11-001",
+        "pool_code": "WPAIR",
+        "mauquf_alaih_category": "CLEAN_WATER_ACCESS",
+        "amount_idr": 48500000,
+        "disbursed_at": "2026-11-12",
+        "beneficiaries_count": 1250
+      },
+      "canonical_json": "{\"amount_idr\":48500000,\"bast_number\":\"BAST-2026-11-001\",\"beneficiaries_count\":1250,\"disbursed_at\":\"2026-11-12\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.distribution\",\"mauquf_alaih_category\":\"CLEAN_WATER_ACCESS\",\"pool_code\":\"WPAIR\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":7}",
+      "leaf_hash": "0x1e7bb1754c6b451bd924a9b1b7afeb1c0e858de312d87ff03471dace8f94d806",
+      "proof": [
+        "0xcf751d3877b6a9ccf5b5e1c28aafc5adcf0877f904f70356ca17c25f8adbc29b",
+        "0x86061d659bc3dfcca4795e21e3c6b9f658218e9e7641382c0762f3587cb49a1c",
+        "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+        "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+      ]
+    },
+    {
+      "index": 8,
+      "leaf_type": "waqf.distribution",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.distribution",
+        "sequence": 8,
+        "bast_number": "BAST-2026-11-002",
+        "pool_code": "WPUM",
+        "mauquf_alaih_category": "MICRO_ENTERPRISE_QARD_HASAN",
+        "amount_idr": 35000000,
+        "disbursed_at": "2026-11-15",
+        "beneficiaries_count": 140
+      },
+      "canonical_json": "{\"amount_idr\":35000000,\"bast_number\":\"BAST-2026-11-002\",\"beneficiaries_count\":140,\"disbursed_at\":\"2026-11-15\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.distribution\",\"mauquf_alaih_category\":\"MICRO_ENTERPRISE_QARD_HASAN\",\"pool_code\":\"WPUM\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":8}",
+      "leaf_hash": "0x819c7d350768b83ababfa823dcf1ba2998071305a7ae18963fef04a9b690ea1a",
+      "proof": [
+        "0xd16a15a4e1a9559cdb7388e9bc2b6703cdfcf2e036509c7b657f999e11b05aba",
+        "0xab649bccd46d11b71468c50b4e4ce1ef4631152481ffa3e652b905a98f553dc1"
+      ]
+    },
+    {
+      "index": 9,
+      "leaf_type": "waqf.sroi_cluster",
+      "payload": {
+        "schema": "waqf-dao.psak412.leaf.v1",
+        "epoch": "2026-11",
+        "leaf_type": "waqf.sroi_cluster",
+        "sequence": 9,
+        "cluster_code": "SROI-CLEAN-WATER-01",
+        "cluster_name": "Clean Water Waqf Infrastructure (4.11:1)",
+        "pool_code": "WPAIR",
+        "beneficiaries_count": 1250,
+        "sroi_ratio_bps": 41100,
+        "audit_methodology": "WAQF Framework (Wijhah - 'Azam - Qiyam - Fahs)"
+      },
+      "canonical_json": "{\"audit_methodology\":\"WAQF Framework (Wijhah - 'Azam - Qiyam - Fahs)\",\"beneficiaries_count\":1250,\"cluster_code\":\"SROI-CLEAN-WATER-01\",\"cluster_name\":\"Clean Water Waqf Infrastructure (4.11:1)\",\"epoch\":\"2026-11\",\"leaf_type\":\"waqf.sroi_cluster\",\"pool_code\":\"WPAIR\",\"schema\":\"waqf-dao.psak412.leaf.v1\",\"sequence\":9,\"sroi_ratio_bps\":41100}",
+      "leaf_hash": "0xd16a15a4e1a9559cdb7388e9bc2b6703cdfcf2e036509c7b657f999e11b05aba",
+      "proof": [
+        "0x819c7d350768b83ababfa823dcf1ba2998071305a7ae18963fef04a9b690ea1a",
+        "0xab649bccd46d11b71468c50b4e4ce1ef4631152481ffa3e652b905a98f553dc1"
+      ]
+    }
+  ],
+  "proofs": {
+    "0": [
+      "0x31b8e40571b877fdb8d902feddc412bbbea742ad343886066e2a05569176d2c5",
+      "0xfc52f2089df873ca0e7b51bf63bbdfb6fcd59aab7b63614af70ce97beb9d1ba6",
+      "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "1": [
+      "0x2b0dfc67c8e76aa2796375e367393518f53b964e61d28e45eedc116691e37b5f",
+      "0xfc52f2089df873ca0e7b51bf63bbdfb6fcd59aab7b63614af70ce97beb9d1ba6",
+      "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "2": [
+      "0xfc491b6c055790b0cb5cf03038c2925acfc9d9bc0c7d52f500b8c2960b2b926d",
+      "0x3ef7fdcd9c391f5b6f0d61893564dbbd26236c4fb90ee9d0a61c992fce363a4b",
+      "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "3": [
+      "0x54b600761b00b187dfc1a8393f95b86d57abffca0167fdc70d4c413f96eebe0b",
+      "0x3ef7fdcd9c391f5b6f0d61893564dbbd26236c4fb90ee9d0a61c992fce363a4b",
+      "0xd8e94d30358a9f8584056c61a8860939f80f772056beb5ef8fbd221682e10035",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "4": [
+      "0x74909a541a6f4a5c51fc693f537954132c2a2567c832bcbb4130cc225005d060",
+      "0x3c38f5d013d9e264c1b54b010565396dffb182863aa23ed97019137b9a987b87",
+      "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "5": [
+      "0x1dfa8535ee9d18abfad160af5bf9e117941819952986be676a3954c0997acea4",
+      "0x3c38f5d013d9e264c1b54b010565396dffb182863aa23ed97019137b9a987b87",
+      "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "6": [
+      "0x1e7bb1754c6b451bd924a9b1b7afeb1c0e858de312d87ff03471dace8f94d806",
+      "0x86061d659bc3dfcca4795e21e3c6b9f658218e9e7641382c0762f3587cb49a1c",
+      "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "7": [
+      "0xcf751d3877b6a9ccf5b5e1c28aafc5adcf0877f904f70356ca17c25f8adbc29b",
+      "0x86061d659bc3dfcca4795e21e3c6b9f658218e9e7641382c0762f3587cb49a1c",
+      "0xbd042b41118fc4d86fcd023eda60f8f0c5f8ec732d88473f40ee6f52320a52b3",
+      "0x96dfb361062508c7641d790dbe7c2ec80607db0780497e304ff058f79e283cb8"
+    ],
+    "8": [
+      "0xd16a15a4e1a9559cdb7388e9bc2b6703cdfcf2e036509c7b657f999e11b05aba",
+      "0xab649bccd46d11b71468c50b4e4ce1ef4631152481ffa3e652b905a98f553dc1"
+    ],
+    "9": [
+      "0x819c7d350768b83ababfa823dcf1ba2998071305a7ae18963fef04a9b690ea1a",
+      "0xab649bccd46d11b71468c50b4e4ce1ef4631152481ffa3e652b905a98f553dc1"
+    ]
+  },
+  "notarization_payload": {
+    "epoch_id": "0x97f57482efa4661d8a8c29bdd2b46e62b371e1e5c858eb863623b2b14507b626",
+    "chain_id": 84532,
+    "registry_address": "0x0000000000000000000000000000000000000000",
+    "contract_method": "notarizeEpoch(string,bytes32,uint256,uint256,uint256,uint256,bytes32)",
+    "metadata_hash": "0x3c2e57688df33a7b3722edc808a0e52838b1bdd0d8b5119803aa2a4601d55868",
+    "abi_arguments": {
+      "periodCode": "2026-11",
+      "merkleRoot": "0x8847ae1a98d62b44dbbfe44900cce0620b7e13914d9bd509d3d694f8fb3921cc",
+      "totalAssetsIdr": 1404880000,
+      "tempWaqfLiabilitiesIdr": 63000000,
+      "netAssetsIdr": 1341880000,
+      "sroiRatioBps": 41100,
+      "odooDbHash": "0x3c2e57688df33a7b3722edc808a0e52838b1bdd0d8b5119803aa2a4601d55868"
+    },
+    "abi_encoded_args_hex": "0x00000000000000000000000000000000000000000000000000000000000000e08847ae1a98d62b44dbbfe44900cce0620b7e13914d9bd509d3d694f8fb3921cc0000000000000000000000000000000000000000000000000000000053bcc4800000000000000000000000000000000000000000000000000000000003c14dc0000000000000000000000000000000000000000000000000000000004ffb76c0000000000000000000000000000000000000000000000000000000000000a08c3c2e57688df33a7b3722edc808a0e52838b1bdd0d8b5119803aa2a4601d558680000000000000000000000000000000000000000000000000000000000000007323032362d313100000000000000000000000000000000000000000000000000",
+    "cast_args": [
+      "2026-11",
+      "0x8847ae1a98d62b44dbbfe44900cce0620b7e13914d9bd509d3d694f8fb3921cc",
+      "1404880000",
+      "63000000",
+      "1341880000",
+      "41100",
+      "0x3c2e57688df33a7b3722edc808a0e52838b1bdd0d8b5119803aa2a4601d55868"
+    ]
+  }
+}

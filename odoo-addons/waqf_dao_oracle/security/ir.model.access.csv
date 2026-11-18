@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_waqf_dao_notarization_user,waqf.dao.notarization.user,model_waqf_dao_notarization,base.group_user,1,1,1,0
+access_waqf_dao_notarization_system,waqf.dao.notarization.system,model_waqf_dao_notarization,base.group_system,1,1,1,1

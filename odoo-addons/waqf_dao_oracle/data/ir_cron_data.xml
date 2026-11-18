@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="ir_cron_prepare_monthly_waqf_notarization" model="ir.cron">
+            <field name="name">WAQF DAO: Prepare Monthly PSAK 412 Merkle Notarization Draft</field>
+            <field name="model_id" ref="model_waqf_dao_notarization"/>
+            <field name="state">code</field>
+            <field name="code">model._cron_prepare_monthly_notarization()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">months</field>
+            <field name="active" eval="True"/>
+        </record>
+    </data>
+</odoo>

@@ -18,7 +18,7 @@ test-odoo:
 	python3 -m compileall -q odoo-addons/waqf_dao_oracle
 
 build-explorer:
-	cd apps/explorer && npm run typecheck && npm run build
+	cd apps/explorer && npm run typecheck && npm run test:merkle && npm run build
 
 audit-hygiene:
 	python3 scripts/audit_hygiene.py

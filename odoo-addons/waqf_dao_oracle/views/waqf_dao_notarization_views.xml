@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_waqf_dao_notarization_list" model="ir.ui.view">
+        <field name="name">waqf.dao.notarization.list</field>
+        <field name="model">waqf.dao.notarization</field>
+        <field name="arch" type="xml">
+            <list string="PSAK 412 Merkle Notarizations">
+                <field name="epoch_code"/>
+                <field name="name"/>
+                <field name="epoch_date"/>
+                <field name="total_assets_idr"/>
+                <field name="temp_waqf_liabilities_idr"/>
+                <field name="net_assets_idr"/>
+                <field name="sroi_ratio_bps"/>
+                <field name="leaf_count"/>
+                <field name="merkle_root"/>
+                <field name="l2_chain_id"/>
+                <field name="state" widget="badge"
+                       decoration-info="state == 'bundled'"
+                       decoration-warning="state == 'notarized'"
+                       decoration-success="state == 'verified'"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_waqf_dao_notarization_form" model="ir.ui.view">
+        <field name="name">waqf.dao.notarization.form</field>
+        <field name="model">waqf.dao.notarization</field>
+        <field name="arch" type="xml">
+            <form string="WAQF DAO PSAK 412 Merkle Notarization">
+                <header>
+                    <button name="action_generate_merkle_bundle"
+                            string="Generate Merkle Bundle"
+                            type="object"
+                            class="btn-primary"
+                            invisible="state in ('notarized', 'verified')"/>
+                    <button name="action_mark_notarized"
+                            string="Mark On-Chain Notarized"
+                            type="object"
+                            class="btn-primary"
+                            invisible="state != 'bundled'"/>
+                    <button name="action_verify_bundle"
+                            string="Verify Merkle Bundle"
+                            type="object"
+                            class="btn-secondary"
+                            invisible="state not in ('bundled', 'notarized')"/>
+                    <button name="action_reset_draft"
+                            string="Reset to Draft"
+                            type="object"
+                            invisible="state == 'draft'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,bundled,notarized,verified"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" placeholder="PSAK 412 Epoch Notarization"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group string="Epoch &amp; Institutional Anchor">
+                            <field name="epoch_code"/>
+                            <field name="epoch_date"/>
+                            <field name="institution_name"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group string="PSAK 412 Ledger Metrics (IDR)">
+                            <field name="total_assets_idr"/>
+                            <field name="temp_waqf_liabilities_idr"/>
+                            <field name="net_assets_idr"/>
+                            <field name="reconciliation_diff_idr"/>
+                            <field name="nazhir_cash_fee_ratio"/>
+                            <field name="mauquf_alaih_ratio"/>
+                            <field name="sroi_ratio_bps"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Genesis 5-Pool Allocations (IDR)">
+                            <field name="pool_wpud_idr"/>
+                            <field name="pool_wpum_idr"/>
+                            <field name="pool_wpair_idr"/>
+                            <field name="pool_wppal_idr"/>
+                            <field name="pool_wpmas_idr"/>
+                        </group>
+                        <group string="Merkle Oracle &amp; L2 Notarization">
+                            <field name="epoch_id_bytes32"/>
+                            <field name="merkle_root"/>
+                            <field name="leaf_count"/>
+                            <field name="metadata_hash"/>
+                            <field name="l2_chain_id"/>
+                            <field name="registry_contract_address"/>
+                            <field name="l2_tx_hash"/>
+                            <field name="notarized_at"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Privacy-Shielded Leaf Manifest" name="manifest">
+                            <field name="leaf_manifest_json" widget="text" readonly="1"/>
+                        </page>
+                        <page string="Merkle Inclusion Proofs" name="proofs">
+                            <field name="proof_bundle_json" widget="text" readonly="1"/>
+                        </page>
+                        <page string="WaqfAuditRegistry ABI Payload" name="abi_payload">
+                            <field name="abi_payload_json" widget="text" readonly="1"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_waqf_dao_notarization_search" model="ir.ui.view">
+        <field name="name">waqf.dao.notarization.search</field>
+        <field name="model">waqf.dao.notarization</field>
+        <field name="arch" type="xml">
+            <search string="Search PSAK 412 Notarizations">
+                <field name="epoch_code"/>
+                <field name="name"/>
+                <field name="merkle_root"/>
+                <field name="l2_tx_hash"/>
+                <filter string="Draft" name="filter_draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Merkle Bundled" name="filter_bundled" domain="[('state', '=', 'bundled')]"/>
+                <filter string="Notarized" name="filter_notarized" domain="[('state', '=', 'notarized')]"/>
+                <filter string="Verified" name="filter_verified" domain="[('state', '=', 'verified')]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Status" name="group_state" context="{'group_by': 'state'}"/>
+                    <filter string="L2 Chain ID" name="group_chain" context="{'group_by': 'l2_chain_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_waqf_dao_notarization" model="ir.actions.act_window">
+        <field name="name">PSAK 412 Notarizations</field>
+        <field name="res_model">waqf.dao.notarization</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_waqf_dao_notarization_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create a PSAK 412 Epoch Snapshot to generate a UU PDP privacy-shielded Merkle bundle.
+            </p>
+        </field>
+    </record>
+
+    <menuitem id="menu_waqf_dao_root"
+              name="WAQF DAO Oracle"
+              sequence="95"/>
+
+    <menuitem id="menu_waqf_dao_notarization"
+              name="PSAK 412 Notarizations"
+              parent="menu_waqf_dao_root"
+              action="action_waqf_dao_notarization"
+              sequence="10"/>
+</odoo>

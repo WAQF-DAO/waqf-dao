@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-cio-sentinel"
+version = "0.1.0"
+description = "9-Point Institutional CIO Forensic Due Diligence, Shariah Screening & Laya Triage Engine for WAQF DAO"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+cio-sentinel = "cio_sentinel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cio_sentinel*"]

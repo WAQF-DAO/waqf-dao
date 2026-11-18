@@ -1,0 +1,48 @@
+{
+  "proposal_id": "EXT-BIOFLOC-HIGHLAND-001",
+  "title": "External Highland Biofloc Tilapia Proposal (10 Sets / 20 D3 Ponds)",
+  "proposer": "External Agro Operator (Anonymized Public Proposal)",
+  "location": "Cimenyan (750-1100 mdpl) & Garut Uncertified Site, West Java",
+  "capital_requested_idr": 427500000.0,
+  "summary": "10 biofloc sets (20 D3 circular ponds) at Rp42.75M/set (+83.6% vs benchmark), 450 kg feed vs 810 kg harvest per set (0.56 implied FCR), net profit exceeding gross revenue track record, and pure Mudharabah-style 30:40:20:10 split on uncertified Garut land.",
+  "land_legal": {
+    "has_aiw_certificate": false,
+    "has_bpn_stw": false,
+    "is_leasehold_or_state_land": true,
+    "tenure_years": 3.0,
+    "offtaker_entity_verified": false
+  },
+  "technical_agro": {
+    "sector": "tilapia",
+    "elevation_mdpl": 925.0,
+    "ambient_temp_c_min": 16.0,
+    "ambient_temp_c_max": 25.0,
+    "claimed_cycles_per_year": 4.0,
+    "claimed_fcr": 0.56,
+    "claimed_harvest_kg_per_cycle": 8100.0,
+    "claimed_feed_kg_per_cycle": 4500.0,
+    "tank_diameter_m": 3.0,
+    "tank_height_m": 1.2,
+    "tank_count": 20,
+    "has_thermal_control": false,
+    "capex_per_unit_idr": 42750000.0,
+    "benchmark_capex_per_unit_idr": 23284314.0
+  },
+  "contract_waterfall": {
+    "akad_type": "mudharabah",
+    "has_principal_guarantee": false,
+    "sinking_fund_pct": 0.0,
+    "mauquf_alaih_pct": 40.0,
+    "nazhir_total_pct": 20.0,
+    "external_nazhir_fee_pct": 10.0,
+    "double_nazhir_stacking": true,
+    "asset_reverts_to_operator_at_end": true,
+    "upfront_capex_ratio_pct": 100.0,
+    "annual_cash_yield_pct": 16.0,
+    "annual_depreciation_pct": 20.0,
+    "capital_at_risk_pct": 100.0,
+    "expected_net_cash_year1_pct": 16.0,
+    "claimed_gross_revenue_idr": 350000000.0,
+    "claimed_net_profit_idr": 420000000.0
+  }
+}

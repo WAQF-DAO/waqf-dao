@@ -1,0 +1,48 @@
+{
+  "proposal_id": "BENCH-NAUTERA-VANNAMEI-001",
+  "title": "Nautera Intensive Vannamei Aquaculture Benchmark (100% Principal Protected)",
+  "proposer": "PT Produktif Indonesia Berdaya (PT PIB) / Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)",
+  "location": "Coastal Lowland Aquaculture Zone, Indonesia",
+  "capital_requested_idr": 500000000.0,
+  "summary": "Internal WAQF DAO aquaculture benchmark structured under Ijarah-Qardh hybrid with verified offtaker, 15% sinking fund, and 18.02% p.a. protected yield.",
+  "land_legal": {
+    "has_aiw_certificate": true,
+    "has_bpn_stw": true,
+    "is_leasehold_or_state_land": false,
+    "tenure_years": 10.0,
+    "offtaker_entity_verified": true
+  },
+  "technical_agro": {
+    "sector": "vannamei",
+    "elevation_mdpl": 15.0,
+    "ambient_temp_c_min": 26.0,
+    "ambient_temp_c_max": 32.0,
+    "claimed_cycles_per_year": 3.0,
+    "claimed_fcr": 1.35,
+    "claimed_harvest_kg_per_cycle": 4800.0,
+    "claimed_feed_kg_per_cycle": 6480.0,
+    "tank_diameter_m": 6.0,
+    "tank_height_m": 1.5,
+    "tank_count": 6,
+    "has_thermal_control": false,
+    "capex_per_unit_idr": 25000000.0,
+    "benchmark_capex_per_unit_idr": 25000000.0
+  },
+  "contract_waterfall": {
+    "akad_type": "ijarah_qardh_hybrid",
+    "has_principal_guarantee": true,
+    "sinking_fund_pct": 15.0,
+    "mauquf_alaih_pct": 75.0,
+    "nazhir_total_pct": 10.0,
+    "external_nazhir_fee_pct": 0.0,
+    "double_nazhir_stacking": false,
+    "asset_reverts_to_operator_at_end": false,
+    "upfront_capex_ratio_pct": 0.0,
+    "annual_cash_yield_pct": 18.02,
+    "annual_depreciation_pct": 0.0,
+    "capital_at_risk_pct": 0.0,
+    "expected_net_cash_year1_pct": 18.02,
+    "claimed_gross_revenue_idr": 1200000000.0,
+    "claimed_net_profit_idr": 320000000.0
+  }
+}
