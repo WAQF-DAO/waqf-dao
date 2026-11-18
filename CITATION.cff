@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use or reference this protocol, whitepaper, or smart contract suite, please cite it as below."
+title: "WAQF DAO: Institutional On-Chain Endowment Protocol under AAOIFI SS 60, PSAK 412, and Digital Hisbah Governance"
+type: software
+version: 0.1.0
+date-released: 2026-11-18
+license: Apache-2.0
+repository-code: "https://github.com/ridloabelian/waqf-dao"
+authors:
+  - family-names: Abelian
+    given-names: Ridlo
+    affiliation: "Yayasan Amal Produktif Indonesia / Asosiasi Nazhir Indonesia / Forum Wakaf Produktif"
+keywords:
+  - waqf
+  - dao
+  - islamic-finance
+  - aaoifi-ss60
+  - psak-412
+  - digital-hisbah
+  - rwa-tokenization
+  - odoo-erp
+  - merkle-audit

@@ -1,0 +1,54 @@
+name: WAQF DAO CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  contracts:
+    name: Smart Contracts (Foundry)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+      - name: Run Forge Tests
+        working-directory: packages/contracts
+        run: forge test -vv
+
+  python-services:
+    name: Oracle Bridge, AI CIO Sentinel & Odoo Addon
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Test Oracle Bridge
+        working-directory: packages/oracle-bridge
+        run: python3 -m unittest discover -s tests -v
+      - name: Test AI CIO Sentinel
+        working-directory: packages/ai-cio-sentinel
+        run: python3 -m unittest discover -s tests -v
+      - name: Compile-Check Odoo Addon
+        run: python3 -m compileall -q odoo-addons/waqf_dao_oracle
+      - name: Run Hygiene & Zero-Spill Audit
+        run: python3 scripts/audit_hygiene.py
+
+  explorer:
+    name: Web3 Explorer & Digital Hisbah UI
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install & Build Explorer
+        working-directory: apps/explorer
+        run: |
+          npm ci || npm install
+          npm run typecheck
+          npm run build

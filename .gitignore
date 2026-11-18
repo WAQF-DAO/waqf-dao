@@ -1,0 +1,31 @@
+# Dependencies & virtualenvs
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+.ruff_cache/
+
+# Build & Foundry artifacts
+dist/
+build/
+out/
+cache/
+broadcast/
+
+# Local environment & secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
