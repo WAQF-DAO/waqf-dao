@@ -1,0 +1,20 @@
+{
+  "network": "Base Sepolia",
+  "chainId": 84532,
+  "rpcUrl": "https://sepolia.base.org",
+  "blockscoutUrl": "https://base-sepolia.blockscout.com",
+  "basescanUrl": "https://sepolia.basescan.org",
+  "explorerUrl": "https://waqf-dao-explorer.pages.dev",
+  "status": "awaiting_testnet_eth",
+  "deployerAddress": "0x4d95C86b6D5619D8097BE64ae3EEbdCbdF28E365",
+  "estimatedDeployGas": 16387596,
+  "estimatedEthRequired": "0.000180263556",
+  "contracts": {},
+  "genesisEpoch": {
+    "epochLabel": "2026-11",
+    "merkleRoot": "0x8847ae1a98d62b44dbbfe44900cce0620b7e13914d9bd509d3d694f8fb3921cc",
+    "leafCount": 10,
+    "notarized": false,
+    "txHash": null
+  }
+}

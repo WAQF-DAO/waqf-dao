@@ -10,8 +10,9 @@
 [![Odoo](https://img.shields.io/badge/Odoo-20.0_%7C_19.0_LGPL--3-714B67.svg)](./odoo-addons/waqf_dao_oracle/__manifest__.py)
 [![Explorer](https://img.shields.io/badge/Explorer-React_19_%2B_TypeScript-0f766e.svg)](./apps/explorer/package.json)
 [![Standards](https://img.shields.io/badge/Standards-AAOIFI_SS60_%7C_PSAK_412_%7C_UU_41%2F2004-b45309.svg)](./docs/FIQH_OF_CODE.md)
+[![Live Explorer](https://img.shields.io/badge/Live_Explorer-Cloudflare_Pages-0b6643.svg)](https://waqf-dao-explorer.pages.dev)
 
-[English Whitepaper](./docs/WHITEPAPER_EN.md) · [Whitepaper Bahasa Indonesia](./docs/WHITEPAPER_ID.md) · [Fiqh of Code Matrix](./docs/FIQH_OF_CODE.md) · [Dual-Nexus Legal Blueprint](./docs/LEGAL_DUAL_NEXUS_BLUEPRINT.md) · [Federated Nazhir Onboarding](./docs/FEDERATED_NAZHIR_ONBOARDING.md)
+[Live Explorer (Cloudflare Pages)](https://waqf-dao-explorer.pages.dev) · [English Whitepaper](./docs/WHITEPAPER_EN.md) · [Whitepaper Bahasa Indonesia](./docs/WHITEPAPER_ID.md) · [Fiqh of Code Matrix](./docs/FIQH_OF_CODE.md) · [Dual-Nexus Legal Blueprint](./docs/LEGAL_DUAL_NEXUS_BLUEPRINT.md) · [Federated Nazhir Onboarding](./docs/FEDERATED_NAZHIR_ONBOARDING.md)
 
 </div>
 
@@ -87,6 +88,17 @@ Initiated from the live operating ecosystem of **Yayasan Amal Produktif Indonesi
   - `WPAIR` — Clean Water Infrastructure (**41 active clusters**, **26,357 beneficiaries**, SROI **`1 : 4.11`**)
   - `WPPAL` — Humanitarian Perpetual Endowment (SROI `4.25x`)
   - `WPMAS` — Mosque, Madrasah & Qur'anic Education Endowment (SROI `3.90x`)
+
+---
+
+## Live Deployments
+
+| Surface | Target / Network | Status | Live Link / Manifest |
+| :--- | :--- | :--- | :--- |
+| **Web3 Explorer & Verifier** | Cloudflare Pages (`waqf-dao-explorer`) | `LIVE (HTTP 200)` | [waqf-dao-explorer.pages.dev](https://waqf-dao-explorer.pages.dev) |
+| **Smart Contracts & Merkle Registry** | Base Sepolia (`Chain ID 84532`) | `awaiting_testnet_eth` | Deployer [`0x4d95C86b6D5619D8097BE64ae3EEbdCbdF28E365`](https://base-sepolia.blockscout.com/address/0x4d95C86b6D5619D8097BE64ae3EEbdCbdF28E365) · [`deployments/base-sepolia.json`](./deployments/base-sepolia.json) |
+
+- **Reproducible Deploy Scripts:** [`scripts/deploy_explorer_cf_pages.sh`](./scripts/deploy_explorer_cf_pages.sh) (Cloudflare Pages) and [`scripts/deploy_base_sepolia.sh`](./scripts/deploy_base_sepolia.sh) (Foundry broadcast + `WaqfAuditRegistry.notarizeEpoch` + Blockscout source verification).
 
 ---
 
