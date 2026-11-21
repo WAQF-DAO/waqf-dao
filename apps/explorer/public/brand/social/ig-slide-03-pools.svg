@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" role="img" aria-labelledby="ig3-title">
+  <title id="ig3-title">WAQF DAO Carousel 03 — 5 Genesis Endowment Pools</title>
+  <defs>
+    <radialGradient id="ig3Bg" cx="50%" cy="20%" r="85%">
+      <stop offset="0%" stop-color="#14372D"/>
+      <stop offset="100%" stop-color="#06110E"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#ig3Bg)"/>
+  <rect x="28" y="28" width="1024" height="1024" rx="36" fill="none" stroke="#D4A84F" stroke-width="2" stroke-opacity="0.32"/>
+
+  <text x="72" y="100" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" letter-spacing="2">WAQF DAO</text>
+  <text x="72" y="128" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600">SLIDE 03 / 03  ·  PORTOFOLIO GENESIS EPOCH 2026-11</text>
+
+  <text x="72" y="216" fill="#FAF7F0" font-family="'Instrument Serif', Georgia, serif" font-size="62">5 Kolam Wakaf Produktif</text>
+  <text x="72" y="282" fill="#ECC774" font-family="'Instrument Serif', Georgia, serif" font-size="56">Rp 1.404.880.000  ·  Selisih Rp 0</text>
+
+  <!-- 5 Pool Rows -->
+  <g transform="translate(72, 336)">
+    <!-- WPUD -->
+    <rect x="0" y="0" width="936" height="110" rx="18" fill="#102822" stroke="#D4A84F" stroke-opacity="0.4"/>
+    <rect x="24" y="26" width="112" height="58" rx="10" fill="#06110E" stroke="#D4A84F"/>
+    <text x="80" y="63" text-anchor="middle" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">WPUD</text>
+    <text x="160" y="50" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700">Akuakultur Udang Vaname (Nautera)</text>
+    <text x="160" y="82" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="17">Hibrida Ijarah Rp 532,4 Jt + Qardh Hasan Rp 300 Jt</text>
+    <text x="908" y="52" text-anchor="end" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="21" font-weight="800">18,02% p.a.</text>
+    <text x="908" y="82" text-anchor="end" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">SROI 3,85x</text>
+
+    <!-- WPUM -->
+    <rect x="0" y="126" width="936" height="110" rx="18" fill="#102822" stroke="#D4A84F" stroke-opacity="0.4"/>
+    <rect x="24" y="152" width="112" height="58" rx="10" fill="#06110E" stroke="#D4A84F"/>
+    <text x="80" y="189" text-anchor="middle" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">WPUM</text>
+    <text x="160" y="176" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700">Wakaf Produktif Multisektor &amp; CWLS</text>
+    <text x="160" y="208" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="17">Sukuk Wakaf Negara CWLS + UMKM Terjamin (Rp 315 Jt)</text>
+    <text x="908" y="178" text-anchor="end" fill="#F5D993" font-family="'JetBrains Mono', monospace" font-size="21" font-weight="800">6,75% Floor</text>
+    <text x="908" y="208" text-anchor="end" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">SROI 5,04x</text>
+
+    <!-- WPAIR -->
+    <rect x="0" y="252" width="936" height="110" rx="18" fill="#102822" stroke="#1EB980" stroke-opacity="0.55"/>
+    <rect x="24" y="278" width="112" height="58" rx="10" fill="#06110E" stroke="#1EB980"/>
+    <text x="80" y="315" text-anchor="middle" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">WPAIR</text>
+    <text x="160" y="302" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700">Infrastruktur Air Bersih Komunal</text>
+    <text x="160" y="334" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="17">41 Klaster Aktif · 26.357 Penerima Manfaat Terverifikasi</text>
+    <text x="908" y="304" text-anchor="end" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="21" font-weight="800">SROI 1:4,11</text>
+    <text x="908" y="334" text-anchor="end" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">Rp 268,48 Jt</text>
+
+    <!-- WPPAL -->
+    <rect x="0" y="378" width="936" height="110" rx="18" fill="#102822" stroke="#D4A84F" stroke-opacity="0.4"/>
+    <rect x="24" y="404" width="112" height="58" rx="10" fill="#06110E" stroke="#D4A84F"/>
+    <text x="80" y="441" text-anchor="middle" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">WPPAL</text>
+    <text x="160" y="428" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700">Dana Abadi Kemanusiaan</text>
+    <text x="160" y="460" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="17">Pokok Terpagar Abadi — Hanya Hasil Bersih Disalurkan (Rp 154 Jt)</text>
+    <text x="908" y="430" text-anchor="end" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="21" font-weight="800">7,20% Net</text>
+    <text x="908" y="460" text-anchor="end" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">SROI 4,25x</text>
+
+    <!-- WPMAS -->
+    <rect x="0" y="504" width="936" height="110" rx="18" fill="#102822" stroke="#D4A84F" stroke-opacity="0.4"/>
+    <rect x="24" y="530" width="112" height="58" rx="10" fill="#06110E" stroke="#D4A84F"/>
+    <text x="80" y="567" text-anchor="middle" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">WPMAS</text>
+    <text x="160" y="554" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700">Masjid, Madrasah &amp; Pendidikan Al-Qur'an</text>
+    <text x="160" y="586" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="17">Ijarah Atap Surya &amp; Wakaf Guru Ngaji (Rp 135 Jt)</text>
+    <text x="908" y="556" text-anchor="end" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="21" font-weight="800">8,10% kWh</text>
+    <text x="908" y="586" text-anchor="end" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">SROI 3,90x</text>
+  </g>
+
+  <text x="72" y="1012" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="600">Audit Bukti Merkle &amp; Simulasi Publik:</text>
+  <text x="1008" y="1012" text-anchor="end" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="18" font-weight="700">waqf-dao-explorer.pages.dev</text>
+</svg>

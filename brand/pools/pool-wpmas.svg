@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360" role="img" aria-labelledby="pool-wpmas-title">
+  <title id="pool-wpmas-title">WPMAS — Mosque, Madrasah &amp; Qur'anic Education Pool Emblem</title>
+  <defs>
+    <radialGradient id="wpmasBg" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#17382D"/>
+      <stop offset="100%" stop-color="#06110E"/>
+    </radialGradient>
+    <linearGradient id="wpmasGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DC97"/>
+      <stop offset="100%" stop-color="#B08124"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="348" rx="34" fill="url(#wpmasBg)" stroke="url(#wpmasGold)" stroke-width="2.5" stroke-opacity="0.55"/>
+  <text x="26" y="38" fill="#A6BAB3" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5">GENESIS POOL 05</text>
+  <rect x="252" y="21" width="84" height="24" rx="12" fill="#D4A84F" fill-opacity="0.16" stroke="#D4A84F" stroke-opacity="0.45"/>
+  <text x="294" y="37" text-anchor="middle" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">FAHS</text>
+
+  <g transform="translate(180, 146)">
+    <rect x="-56" y="-56" width="112" height="112" rx="10" fill="#081713" stroke="url(#wpmasGold)" stroke-width="3.5"/>
+    <rect x="-56" y="-56" width="112" height="112" rx="10" fill="#081713" fill-opacity="0.7" stroke="url(#wpmasGold)" stroke-width="3.5" transform="rotate(45)"/>
+    <!-- Mosque Dome + Open Qur'anic Book Base -->
+    <path d="M 0 -38 L 0 -30" stroke="#ECC774" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="0" cy="-40" r="3" fill="#ECC774"/>
+    <path d="M -26 4 C -26 -14 -14 -24 0 -30 C 14 -24 26 -14 26 4 Z" fill="url(#wpmasGold)"/>
+    <path d="M -8 4 L -8 -7 C -8 -12 -4 -15 0 -18 C 4 -15 8 -12 8 -7 L 8 4 Z" fill="#06110E"/>
+    <path d="M -32 14 Q -16 8 0 16 Q 16 8 32 14 L 32 30 Q 16 24 0 32 Q -16 24 -32 30 Z" fill="#1EB980"/>
+  </g>
+
+  <text x="180" y="256" text-anchor="middle" fill="#FAF7F0" font-family="'JetBrains Mono', monospace" font-size="30" font-weight="800" letter-spacing="3">WPMAS</text>
+  <text x="180" y="280" text-anchor="middle" fill="#ECC774" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="600">Mosque, Madrasah &amp; Qur'anic Education</text>
+  <text x="180" y="298" text-anchor="middle" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Solar Microgrids + Qur'anic Teacher Waqf</text>
+
+  <rect x="34" y="314" width="292" height="28" rx="14" fill="#D4A84F" fill-opacity="0.18" stroke="#D4A84F" stroke-opacity="0.5"/>
+  <text x="180" y="332" text-anchor="middle" fill="#F5D993" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">8.10% SOLAR SAVINGS  ·  SROI 3.90x</text>
+</svg>

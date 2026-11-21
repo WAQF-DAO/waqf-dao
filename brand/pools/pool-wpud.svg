@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 360" width="360" height="360" role="img" aria-labelledby="pool-wpud-title">
+  <title id="pool-wpud-title">WPUD — Vannamei Aquaculture RWA Pool Emblem</title>
+  <defs>
+    <radialGradient id="wpudBg" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#14392F"/>
+      <stop offset="100%" stop-color="#06110E"/>
+    </radialGradient>
+    <linearGradient id="wpudGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DC97"/>
+      <stop offset="100%" stop-color="#B08124"/>
+    </linearGradient>
+    <linearGradient id="wpudWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48E5A8"/>
+      <stop offset="100%" stop-color="#0E724C"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="348" rx="34" fill="url(#wpudBg)" stroke="url(#wpudGold)" stroke-width="2.5" stroke-opacity="0.55"/>
+  <text x="26" y="38" fill="#A6BAB3" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1.5">GENESIS POOL 01</text>
+  <rect x="228" y="21" width="108" height="24" rx="12" fill="#D4A84F" fill-opacity="0.16" stroke="#D4A84F" stroke-opacity="0.45"/>
+  <text x="282" y="37" text-anchor="middle" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700">QIYAM &amp; FAHS</text>
+
+  <!-- Rub el Hizb Sector Crest -->
+  <g transform="translate(180, 146)">
+    <rect x="-56" y="-56" width="112" height="112" rx="10" fill="#081713" stroke="url(#wpudGold)" stroke-width="3.5"/>
+    <rect x="-56" y="-56" width="112" height="112" rx="10" fill="#081713" fill-opacity="0.7" stroke="url(#wpudGold)" stroke-width="3.5" transform="rotate(45)"/>
+    <!-- Stylized Vannamei Aquaculture Wave & Coastal Aerator Rings -->
+    <path d="M -38 14 Q -19 -2 0 14 T 38 14" fill="none" stroke="url(#wpudWater)" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M -32 29 Q -16 17 0 29 T 32 29" fill="none" stroke="#ECC774" stroke-width="3.8" stroke-linecap="round" stroke-opacity="0.85"/>
+    <path d="M -22 -4 C -22 -24 -4 -36 16 -32 C 26 -30 32 -20 26 -10 C 20 -2 8 -6 4 -16 C 14 -18 16 -24 6 -24 C -6 -24 -12 -14 -12 -4 Z"
+          fill="url(#wpudGold)"/>
+    <circle cx="14" cy="-21" r="2.2" fill="#06110E"/>
+  </g>
+
+  <text x="180" y="256" text-anchor="middle" fill="#FAF7F0" font-family="'JetBrains Mono', monospace" font-size="30" font-weight="800" letter-spacing="3">WPUD</text>
+  <text x="180" y="280" text-anchor="middle" fill="#ECC774" font-family="'Plus Jakarta Sans', sans-serif" font-size="13.5" font-weight="600">Nautera Vannamei Aquaculture RWA</text>
+  <text x="180" y="298" text-anchor="middle" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="11.5">Ijarah Rp 532.4M + Qardh Hasan Rp 300M</text>
+
+  <rect x="34" y="314" width="292" height="28" rx="14" fill="#108458" fill-opacity="0.22" stroke="#1EB980" stroke-opacity="0.5"/>
+  <text x="180" y="332" text-anchor="middle" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">18.02% p.a. NET  ·  SROI 3.85x</text>
+</svg>

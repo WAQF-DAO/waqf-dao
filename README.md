@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./brand/logos/waqf-dao-horizontal-dark.svg" alt="WAQF DAO — Institutional On-Chain Endowment Protocol" width="760" />
+
 # WAQF DAO
 
 **Institutional On-Chain Endowment Protocol under AAOIFI Shari'ah Standard No. 60, PSAK 412, and Dual-Chamber Digital Hisbah Governance**
@@ -111,6 +113,7 @@ Initiated from the live operating ecosystem of **Yayasan Amal Produktif Indonesi
 | `packages/ai-cio-sentinel/` | 9-point AI CIO Forensic & Shariah Screening engine + deterministic Laya pool triage (`WPUD..WPMAS`) | `17` unittest cases (`0` failed) | [`packages/ai-cio-sentinel`](./packages/ai-cio-sentinel) |
 | `odoo-addons/waqf_dao_oracle/` | Odoo `20.0` / `19.0` (`LGPL-3`) federated Nazhir module with scheduled PSAK 412 Merkle bundling | `python3 -m compileall` & Odoo/oracle Merkle parity | [`odoo-addons/waqf_dao_oracle`](./odoo-addons/waqf_dao_oracle) |
 | `apps/explorer/` | React `19` + TypeScript + Vite institutional portal (`EN`/`ID`), Waterfall Simulator, Digital Hisbah & WebCrypto Verifier | `tsc --noEmit`, `4` Merkle tests, Vite `build` (`dist/`) | [`apps/explorer`](./apps/explorer) |
+| `brand/` | Master SVG/PNG logo suite, 5 Genesis pool emblems, social banners, AI key visuals & A4 executive marketing kit (`ID`/`EN`) | Audited by `audit_hygiene.py` & live in Explorer Brand tab | [`brand`](./brand) |
 | `docs/` | Institutional Whitepapers (`EN` & `ID`), `Fiqh of Code` matrix, `RAK DAO / ADGM` Legal Blueprint & Nazhir Onboarding | Audited against live code & `audit_hygiene.py` | [`docs`](./docs) |
 
 ---
@@ -173,6 +176,7 @@ npm run dev
 3. **[Fiqh of Code Traceability Matrix (`docs/FIQH_OF_CODE.md`)](./docs/FIQH_OF_CODE.md)** — Clause-by-clause mapping from AAOIFI SS 60, GS 13, PSAK 412, and Law No. 41/2004 to Solidity functions, custom errors, and Python sentinel checks.
 4. **[Dual-Nexus Legal Blueprint (`docs/LEGAL_DUAL_NEXUS_BLUEPRINT.md`)](./docs/LEGAL_DUAL_NEXUS_BLUEPRINT.md)** — Comparative structuring across **RAK DAO (DARe)**, **ADGM DLT Foundations**, and Indonesian **BWI Nazhir + LKS-PWU + PT Operating SPV** custody.
 5. **[Federated Nazhir Onboarding (`docs/FEDERATED_NAZHIR_ONBOARDING.md`)](./docs/FEDERATED_NAZHIR_ONBOARDING.md)** — Step-by-step guide for FWP, ANI, and international endowments joining via `npo-odoo-docker` + `waqf_dao_oracle`.
+6. **[Brand Guidelines (`brand/BRAND_GUIDELINES.md`)](./brand/BRAND_GUIDELINES.md) & [Marketing Kit (`brand/MARKETING_KIT_ID.md`)](./brand/MARKETING_KIT_ID.md)** — Complete visual identity standards (*Medina Hisbah Vault Seal*), color & typography tokens, press kit, social media templates, and print-ready A4 collateral.
 
 ---
 

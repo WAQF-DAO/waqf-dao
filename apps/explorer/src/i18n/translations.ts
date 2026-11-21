@@ -13,6 +13,7 @@ export const UI_COPY: Record<
       hisbah: string;
       merkle: string;
       forensic: string;
+      brand: string;
     };
     kpis: {
       principalLabel: string;
@@ -136,6 +137,38 @@ export const UI_COPY: Record<
       colRejected: string;
       colRule: string;
     };
+    brand: {
+      heading: string;
+      subheading: string;
+      semioticsTitle: string;
+      semioticsSubtitle: string;
+      pillar1Title: string;
+      pillar1Desc: string;
+      pillar2Title: string;
+      pillar2Desc: string;
+      pillar3Title: string;
+      pillar3Desc: string;
+      logosTitle: string;
+      logosSubtitle: string;
+      downloadOgBtn: string;
+      poolsTitle: string;
+      poolsSubtitle: string;
+      paletteTitle: string;
+      paletteSubtitle: string;
+      typographyTitle: string;
+      typographySubtitle: string;
+      collateralTitle: string;
+      collateralSubtitle: string;
+      onePagerIdBtn: string;
+      onePagerEnBtn: string;
+      certTemplateBtn: string;
+      boilerplateTitle: string;
+      boilerplateText: string;
+      pitchTitle: string;
+      pitchText: string;
+      copyBtn: string;
+      copiedLabel: string;
+    };
     footer: {
       disclaimer: string;
       partners: string;
@@ -153,6 +186,7 @@ export const UI_COPY: Record<
       hisbah: 'Digital Hisbah DAO',
       merkle: 'Odoo Merkle Verifier',
       forensic: 'AI CIO Forensics',
+      brand: 'Brand & Media Kit',
     },
     kpis: {
       principalLabel: 'Principal Preservation',
@@ -288,6 +322,47 @@ export const UI_COPY: Record<
       colRejected: 'External Biofloc Proposal',
       colRule: 'Hard Gate Threshold',
     },
+    brand: {
+      heading: 'WAQF DAO Brand Identity & Media Kit',
+      subheading:
+        'Official Medina Hisbah Vault Seal vector lockups, 5 Genesis pool emblems, color tokens, and print-ready institutional press collateral.',
+      semioticsTitle: 'Seal Semiotics — The Medina Hisbah Vault',
+      semioticsSubtitle:
+        'Every line of the WAQF DAO seal encodes Tahbisul Ashli wa Tasbilul Manfa’ah into geometric architecture.',
+      pillar1Title: '1. Rub el Hizb Octagon (Principal Lock)',
+      pillar1Desc:
+        'Interlocked 0° and 45° squares bind the 4 WAQF Framework stages with AAOIFI SS 60, PSAK 412, Law 41/2004, and UU PDP.',
+      pillar2Title: '2. Medina Arch & 0x01 Merkle Keystone',
+      pillar2Desc:
+        'Pointed arch sanctuary encloses the diamond SHA-256 Merkle root anchored from Odoo 20.0 ERP zero-diff ledgers.',
+      pillar3Title: '3. Three-Channel PSAK 412 Waterfall',
+      pillar3Desc:
+        'Flows cleanly into 40% Sinking Fund, 50.5% Mauquf ‘Alaih (BAST-gated), and <=10% statutory Nazhir governance.',
+      logosTitle: 'Master Vector Logo Suite (SVG & PNG)',
+      logosSubtitle:
+        'Font-independent custom vector paths suitable for GitHub, Odoo ERP, KAP audit books, and institutional media.',
+      downloadOgBtn: 'Download 1200×630 OpenGraph PNG',
+      poolsTitle: '5 Genesis Endowment Pool Emblems',
+      poolsSubtitle: 'Dedicated sector crests for WPUD, WPUM, WPAIR, WPPAL, and WPMAS deployments.',
+      paletteTitle: 'Canonical Color Tokens',
+      paletteSubtitle: 'Click any swatch to copy its exact HEX code from theme.css.',
+      typographyTitle: 'Institutional Typography System',
+      typographySubtitle: 'Editorial authority paired with tabular-numeral cryptographic clarity.',
+      collateralTitle: 'Print Collateral & Press Boilerplates',
+      collateralSubtitle:
+        'Open print-ready A4 PDF templates or copy verified institutional descriptions.',
+      onePagerIdBtn: 'Executive One-Pager (ID · A4)',
+      onePagerEnBtn: 'Executive Fact Sheet (EN · A4)',
+      certTemplateBtn: 'Wakif AIW Certificate (A4)',
+      boilerplateTitle: 'Official Press Boilerplate (EN)',
+      boilerplateText:
+        'WAQF DAO is an institutional, asset-backed Islamic endowment protocol initiated from Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386) and PT Produktif Indonesia Berdaya (PT PIB), aligned with FWP and ANI. Bridging Odoo 20.0 PSAK 412 ledgers (4x KAP WTP, FY 2022-2025) with AAOIFI SS 60 ownerless smart vaults, Digital Hisbah governance, and 9-point AI CIO forensics.',
+      pitchTitle: '60-Second Executive Narrative (EN)',
+      pitchText:
+        'Unlike speculative crypto tokens or opaque legacy bookkeeping, WAQF DAO locks permanent Mu’abbad principal inside ownerless smart vaults, enforces Law 41/2004 10% Nazhir caps, gates Mauquf ‘Alaih releases behind BAST proofs, and backs 5 pools totaling Rp 1.404B (diff = Rp 0), including 18.02% p.a. Nautera RWA and 4.11x SROI WPAIR clean water.',
+      copyBtn: 'Copy',
+      copiedLabel: 'Copied!',
+    },
     footer: {
       disclaimer:
         'Public Institutional Transparency Portal • Governed by WAQF Framework (Wijhah · ’Azam · Qiyam · Fahs) • PSAK 412 & AAOIFI SS 60 Compliant.',
@@ -306,6 +381,7 @@ export const UI_COPY: Record<
       hisbah: 'Hisbah Digital DAO',
       merkle: 'Verifikator Merkle Odoo',
       forensic: 'Konsol Forensik AI CIO',
+      brand: 'Kit Brand & Media',
     },
     kpis: {
       principalLabel: 'Ketahanan Pokok Wakaf',
@@ -440,6 +516,47 @@ export const UI_COPY: Record<
       colBenchmark: 'Benchmark Nautera (WPUD)',
       colRejected: 'Proposal Bioflok Eksternal',
       colRule: 'Ambang Batas Keras',
+    },
+    brand: {
+      heading: 'Identitas Brand & Kit Pemasaran WAQF DAO',
+      subheading:
+        'Aset vektor resmi Medina Hisbah Vault Seal, 5 lencana kolam genesis, token warna kanonik, dan materi siaran pers siap cetak.',
+      semioticsTitle: 'Filosofi Lambang — Segel Brankas Medina Hisbah',
+      semioticsSubtitle:
+        'Setiap elemen geometris pada segel WAQF DAO menerjemahkan Tahbisul Ashli wa Tasbilul Manfa’ah.',
+      pillar1Title: '1. Oktagon Rub el Hizb (Pagar Pokok)',
+      pillar1Desc:
+        'Dua persegi saling kunci (0° & 45°) memadukan 4 tahap WAQF Framework dengan AAOIFI SS 60, PSAK 412, UU 41/2004, dan UU PDP.',
+      pillar2Title: '2. Lengkungan Madinah & Batu Kunci 0x01',
+      pillar2Desc:
+        'Lengkungan mihrab membungkus berlian SHA-256 Merkle Root yang terjangkar dari neraca seimbang Odoo 20.0 ERP.',
+      pillar3Title: '3. Tiga Aliran Air Terjun PSAK 412',
+      pillar3Desc:
+        'Mengalir terukur ke 40% Sinking Fund, 50,5% Mauquf ‘Alaih (gerbang BAST), serta <=10% hak pengelola Nazhir.',
+      logosTitle: 'Paket Logo Vektor Master (SVG & PNG)',
+      logosSubtitle:
+        'Huruf vektor independen yang tampil tajam di GitHub, modul Odoo ERP, laporan audit KAP, hingga media sosial.',
+      downloadOgBtn: 'Unduh OpenGraph PNG (1200×630)',
+      poolsTitle: '5 Lencana Kolam Wakaf Genesis',
+      poolsSubtitle: 'Emblem sektoral khusus untuk WPUD, WPUM, WPAIR, WPPAL, dan WPMAS.',
+      paletteTitle: 'Sistem Warna Kanonik',
+      paletteSubtitle: 'Klik kotak warna untuk menyalin kode HEX persis sesuai theme.css.',
+      typographyTitle: 'Hierarki Tipografi Institusional',
+      typographySubtitle: 'Kewibawaan editorial berpadu dengan keterbacaan angka audit tabular.',
+      collateralTitle: 'Materi Cetak Eksekutif & Boilerplate Siaran Pers',
+      collateralSubtitle:
+        'Buka lembar fakta siap cetak ukuran A4 PDF atau salin narasi resmi lembaga.',
+      onePagerIdBtn: 'Lembar Fakta Eksekutif (ID · A4)',
+      onePagerEnBtn: 'Executive Fact Sheet (EN · A4)',
+      certTemplateBtn: 'Templat Sertifikat AIW Wakif (A4)',
+      boilerplateTitle: 'Boilerplate Siaran Pers Resmi (ID)',
+      boilerplateText:
+        'WAQF DAO adalah protokol infrastruktur wakaf produktif berbasis aset riil yang lahir dari praktik Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386) dan PT Produktif Indonesia Berdaya (PT PIB) dalam ekosistem FWP dan ANI. Memadukan pembukuan Odoo 20.0 PSAK 412 (4x KAP WTP 2022-2025) dengan brankas nir-pemilik AAOIFI SS 60, Digital Hisbah, serta AI CIO Forensic Sentinel 9-Poin.',
+      pitchTitle: 'Narasi Eksekutif 60 Detik (ID)',
+      pitchText:
+        'Berbeda dari token kripto spekulatif maupun pembukuan manual yang tertutup, WAQF DAO mengunci pokok abadi Mu’abbad dalam brankas nir-pemilik, menegakkan batas fee Nazhir <=10% UU 41/2004, mengunci pencairan Mauquf ‘Alaih dengan bukti BAST, serta mengawal Rp 1,404 Miliar aset teraudit (selisih Rp 0) termasuk Nautera 18,02% p.a. dan 41 klaster air bersih WPAIR (SROI 4,11x).',
+      copyBtn: 'Salin',
+      copiedLabel: 'Tersalin!',
     },
     footer: {
       disclaimer:

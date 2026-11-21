@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080" role="img" aria-labelledby="ig2-title">
+  <title id="ig2-title">WAQF DAO Carousel 02 — Waterfall PSAK 412 &amp; UU 41/2004</title>
+  <defs>
+    <linearGradient id="ig2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1D18"/>
+      <stop offset="100%" stop-color="#06110E"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1080" fill="url(#ig2Bg)"/>
+  <rect x="28" y="28" width="1024" height="1024" rx="36" fill="none" stroke="#D4A84F" stroke-width="2" stroke-opacity="0.32"/>
+
+  <text x="72" y="100" fill="#FAF7F0" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800" letter-spacing="2">WAQF DAO</text>
+  <text x="72" y="128" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600">SLIDE 02 / 03  ·  INVARIANT WATERFALL &amp; BAST ORACLE</text>
+
+  <text x="72" y="218" fill="#FAF7F0" font-family="'Instrument Serif', Georgia, serif" font-size="64">Hukum Wakaf UU 41/2004</text>
+  <text x="72" y="288" fill="#6EE7B7" font-family="'Instrument Serif', Georgia, serif" font-size="64">Dikunci Matematis On-Chain.</text>
+
+  <!-- Visual Waterfall Bar -->
+  <rect x="72" y="348" width="936" height="84" rx="42" fill="#0D251E" stroke="#D4A84F" stroke-opacity="0.4" stroke-width="2"/>
+  <rect x="80" y="356" width="368" height="68" rx="34" fill="#1B4D3E"/>
+  <text x="264" y="398" text-anchor="middle" fill="#FAF7F0" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">40.0% SINKING FUND</text>
+
+  <rect x="454" y="356" width="448" height="68" rx="16" fill="#108458"/>
+  <text x="678" y="398" text-anchor="middle" fill="#FFFFFF" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="800">50.5% MAUQUF 'ALAIH</text>
+
+  <rect x="908" y="356" width="92" height="68" rx="34" fill="#D4A84F"/>
+  <text x="954" y="398" text-anchor="middle" fill="#06110E" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="800">9.5%</text>
+
+  <!-- 3 Breakdown Cards -->
+  <g transform="translate(72, 474)">
+    <rect x="0" y="0" width="936" height="140" rx="20" fill="#FAF7F0"/>
+    <rect x="24" y="28" width="12" height="84" rx="6" fill="#1B4D3E"/>
+    <text x="54" y="54" fill="#11221D" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">1. Upfront Sinking Fund (10%–40%)</text>
+    <text x="54" y="88" fill="#3B4F48" font-family="'Plus Jakarta Sans', sans-serif" font-size="19">Cadangan depresiasi, pemeliharaan aset produktif &amp; biosekuriti</text>
+    <text x="54" y="116" fill="#0B6643" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">Menjaga keutuhan nilai pokok (Hifzh al-Mal) di luar biaya operasional</text>
+
+    <rect x="0" y="162" width="936" height="140" rx="20" fill="#FAF7F0"/>
+    <rect x="24" y="190" width="12" height="84" rx="6" fill="#108458"/>
+    <text x="54" y="216" fill="#11221D" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">2. Penyaluran Mauquf 'Alaih Wajib &gt;= 50%</text>
+    <text x="54" y="250" fill="#3B4F48" font-family="'Plus Jakarta Sans', sans-serif" font-size="19">Dana penerima manfaat ditahan di Escrow hingga Oracle BAST lapangan ditandatangani.</text>
+    <text x="54" y="278" fill="#0B6643" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">Tanpa BAST sah = Dana tidak bisa dicairkan</text>
+
+    <rect x="0" y="324" width="936" height="140" rx="20" fill="#FAF7F0"/>
+    <rect x="24" y="352" width="12" height="84" rx="6" fill="#D4A84F"/>
+    <text x="54" y="378" fill="#11221D" font-family="'Plus Jakarta Sans', sans-serif" font-size="24" font-weight="800">3. Imbalan Nazhir Terkunci &lt;= 10% (Pasal 12 UU 41/2004)</text>
+    <text x="54" y="412" fill="#3B4F48" font-family="'Plus Jakarta Sans', sans-serif" font-size="19">Benchmark Nautera berjalan di 9,5%. Upaya klaim &gt;10% otomatis revert di Smart Contract.</text>
+    <text x="54" y="440" fill="#9E1C22" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">ERROR GUARD: NazhirCapExceeded() — Anti Double-Fee Stacking</text>
+  </g>
+
+  <text x="72" y="1012" fill="#A6BAB3" font-family="'JetBrains Mono', monospace" font-size="16">GESER UNTUK 5 KOLAM WAKAF GENESIS  →</text>
+  <text x="1008" y="1012" text-anchor="end" fill="#ECC774" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="700">PSAK412WaterfallSplitter.sol</text>
+</svg>

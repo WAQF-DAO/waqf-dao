@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="waqf-dao-mono-gold-title">
+  <title id="waqf-dao-mono-gold-title">WAQF DAO — Monochrome Sovereign Gold Foil Mark</title>
+  <g stroke="#D4A84F" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="108" y="108" width="296" height="296" rx="16" stroke-width="10"/>
+    <rect x="108" y="108" width="296" height="296" rx="16" stroke-width="10" transform="rotate(45 256 256)"/>
+    <path d="M 176 370 L 176 256 C 176 198 214 162 256 132 C 298 162 336 198 336 256 L 336 370" stroke-width="9"/>
+    <path d="M 239 237 C 219 250 212 266 212 288 L 212 349" stroke-width="12"/>
+    <line x1="256" y1="243" x2="256" y2="352" stroke-width="15"/>
+    <path d="M 273 237 C 293 250 300 266 300 288 L 300 349" stroke-width="12"/>
+    <line x1="160" y1="370" x2="352" y2="370" stroke-width="9"/>
+    <line x1="198" y1="389" x2="314" y2="389" stroke-width="5"/>
+  </g>
+  <g fill="#D4A84F">
+    <path d="M 256 168 L 289 201 L 256 234 L 223 201 Z"/>
+    <circle cx="256" cy="46" r="6"/>
+    <circle cx="404" cy="108" r="6"/>
+    <circle cx="466" cy="256" r="6"/>
+    <circle cx="404" cy="404" r="6"/>
+    <circle cx="256" cy="466" r="6"/>
+    <circle cx="108" cy="404" r="6"/>
+    <circle cx="46" cy="256" r="6"/>
+    <circle cx="108" cy="108" r="6"/>
+  </g>
+</svg>

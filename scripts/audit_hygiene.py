@@ -43,6 +43,7 @@ TEXT_EXTENSIONS = {
     ".csv",
     ".css",
     ".html",
+    ".svg",
     ".cff",
     ".sh",
     ".txt",

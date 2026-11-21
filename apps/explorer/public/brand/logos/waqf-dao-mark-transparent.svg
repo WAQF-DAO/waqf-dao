@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="waqf-dao-transparent-title">
+  <title id="waqf-dao-transparent-title">WAQF DAO — Transparent Medina Hisbah Seal</title>
+  <defs>
+    <linearGradient id="goldGradT" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D993"/>
+      <stop offset="45%" stop-color="#D4A84F"/>
+      <stop offset="100%" stop-color="#9B7222"/>
+    </linearGradient>
+    <linearGradient id="goldSoftT" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ECC774"/>
+      <stop offset="100%" stop-color="#B68A32"/>
+    </linearGradient>
+    <linearGradient id="emeraldStreamT" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48E5A8"/>
+      <stop offset="55%" stop-color="#1EB980"/>
+      <stop offset="100%" stop-color="#0D6E49"/>
+    </linearGradient>
+    <linearGradient id="sinkingStreamT" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A84F"/>
+      <stop offset="100%" stop-color="#108458"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Rub el Hizb Octagonal Frame -->
+  <g stroke="url(#goldGradT)" stroke-linejoin="round">
+    <rect x="108" y="108" width="296" height="296" rx="16" fill="#071612" fill-opacity="0.92" stroke-width="8"/>
+    <rect x="108" y="108" width="296" height="296" rx="16" fill="#071612" fill-opacity="0.88" stroke-width="8" transform="rotate(45 256 256)"/>
+    <rect x="128" y="128" width="256" height="256" rx="10" fill="none" stroke-width="1.5" stroke-opacity="0.45"/>
+    <rect x="128" y="128" width="256" height="256" rx="10" fill="none" stroke-width="1.5" stroke-opacity="0.45" transform="rotate(45 256 256)"/>
+  </g>
+
+  <!-- 8 Anchor Nodes -->
+  <g fill="#ECC774">
+    <circle cx="256" cy="46" r="5.5"/>
+    <circle cx="404" cy="108" r="5.5"/>
+    <circle cx="466" cy="256" r="5.5"/>
+    <circle cx="404" cy="404" r="5.5"/>
+    <circle cx="256" cy="466" r="5.5"/>
+    <circle cx="108" cy="404" r="5.5"/>
+    <circle cx="46" cy="256" r="5.5"/>
+    <circle cx="108" cy="108" r="5.5"/>
+  </g>
+
+  <!-- Inner Medina Mihrab Arch -->
+  <path d="M 176 370 L 176 256 C 176 198 214 162 256 132 C 298 162 336 198 336 256 L 336 370 Z"
+        fill="#050E0B" stroke="url(#goldGradT)" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M 189 359 L 189 258 C 189 208 220 176 256 149 C 292 176 323 208 323 258 L 323 359"
+        fill="none" stroke="#1EB980" stroke-width="2" stroke-opacity="0.38"/>
+
+  <!-- Merkle Keystone -->
+  <path d="M 256 168 L 289 201 L 256 234 L 223 201 Z" fill="url(#goldGradT)"/>
+  <path d="M 256 181 L 276 201 L 256 221 L 236 201 Z" fill="url(#emeraldStreamT)"/>
+  <circle cx="256" cy="201" r="5" fill="#FAF7F0"/>
+
+  <!-- 3-Channel PSAK 412 Waterfall -->
+  <path d="M 239 237 C 219 250 212 266 212 288 L 212 349"
+        fill="none" stroke="url(#sinkingStreamT)" stroke-width="12" stroke-linecap="round"/>
+  <line x1="256" y1="243" x2="256" y2="352"
+        stroke="url(#emeraldStreamT)" stroke-width="15.5" stroke-linecap="round"/>
+  <path d="M 273 237 C 293 250 300 266 300 288 L 300 349"
+        fill="none" stroke="url(#goldSoftT)" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Zero-Diff Ledger Plinth -->
+  <line x1="160" y1="370" x2="352" y2="370" stroke="url(#goldGradT)" stroke-width="7" stroke-linecap="round"/>
+  <line x1="198" y1="388" x2="314" y2="388" stroke="#1EB980" stroke-width="4.5" stroke-linecap="round"/>
+</svg>

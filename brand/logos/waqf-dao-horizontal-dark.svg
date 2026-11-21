@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-labelledby="waqf-dao-horiz-dark-title">
+  <title id="waqf-dao-horiz-dark-title">WAQF DAO — Institutional On-Chain Endowment Protocol (Dark Lockup)</title>
+  <defs>
+    <linearGradient id="bannerBgDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D261F"/>
+      <stop offset="55%" stop-color="#081713"/>
+      <stop offset="100%" stop-color="#050F0C"/>
+    </linearGradient>
+    <linearGradient id="goldTextDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DC97"/>
+      <stop offset="50%" stop-color="#D4A84F"/>
+      <stop offset="100%" stop-color="#AA7F28"/>
+    </linearGradient>
+    <linearGradient id="emeraldBarDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48E5A8"/>
+      <stop offset="100%" stop-color="#0E724C"/>
+    </linearGradient>
+    <linearGradient id="sinkingBarDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4A84F"/>
+      <stop offset="100%" stop-color="#108458"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Institutional Dark Frame -->
+  <rect x="0" y="0" width="1200" height="340" rx="24" fill="url(#bannerBgDark)"/>
+  <rect x="2" y="2" width="1196" height="336" rx="22" fill="none" stroke="#D4A84F" stroke-width="2" stroke-opacity="0.32"/>
+
+  <!-- Subtle Right Architectural Pattern -->
+  <g stroke="#D4A84F" stroke-opacity="0.06" fill="none" stroke-width="1.5">
+    <rect x="970" y="-40" width="240" height="240" rx="16"/>
+    <rect x="970" y="-40" width="240" height="240" rx="16" transform="rotate(45 1090 80)"/>
+  </g>
+
+  <!-- Embedded Medina Hisbah Seal (left) -->
+  <g transform="translate(46, 42) scale(0.5)">
+    <rect x="16" y="16" width="480" height="480" rx="108" fill="#071511" stroke="url(#goldTextDark)" stroke-width="4" stroke-opacity="0.55"/>
+    <rect x="124" y="124" width="264" height="264" rx="14" fill="#081713" stroke="url(#goldTextDark)" stroke-width="7"/>
+    <rect x="124" y="124" width="264" height="264" rx="14" fill="#081713" fill-opacity="0.7" stroke="url(#goldTextDark)" stroke-width="7" transform="rotate(45 256 256)"/>
+    <g fill="#ECC774">
+      <circle cx="256" cy="69" r="5"/>
+      <circle cx="388" cy="124" r="5"/>
+      <circle cx="443" cy="256" r="5"/>
+      <circle cx="388" cy="388" r="5"/>
+      <circle cx="256" cy="443" r="5"/>
+      <circle cx="124" cy="388" r="5"/>
+      <circle cx="69" cy="256" r="5"/>
+      <circle cx="124" cy="124" r="5"/>
+    </g>
+    <path d="M 184 358 L 184 256 C 184 204 218 173 256 146 C 294 173 328 204 328 256 L 328 358 Z"
+          fill="#040C0A" stroke="url(#goldTextDark)" stroke-width="6.5" stroke-linejoin="round"/>
+    <path d="M 256 178 L 286 208 L 256 238 L 226 208 Z" fill="url(#goldTextDark)"/>
+    <path d="M 256 190 L 274 208 L 256 226 L 238 208 Z" fill="url(#emeraldBarDark)"/>
+    <circle cx="256" cy="208" r="4.5" fill="#FAF7F0"/>
+    <path d="M 241 240 C 223 252 216 266 216 286 L 216 340" fill="none" stroke="url(#sinkingBarDark)" stroke-width="11" stroke-linecap="round"/>
+    <line x1="256" y1="246" x2="256" y2="342" stroke="url(#emeraldBarDark)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 271 240 C 289 252 296 266 296 286 L 296 340" fill="none" stroke="url(#goldTextDark)" stroke-width="11" stroke-linecap="round"/>
+    <line x1="170" y1="358" x2="342" y2="358" stroke="url(#goldTextDark)" stroke-width="6.5" stroke-linecap="round"/>
+    <line x1="204" y1="374" x2="308" y2="374" stroke="#1EB980" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- Custom Vector Wordmark: WAQF DAO (Font-independent) -->
+  <g transform="translate(348, 86) scale(1.06)">
+    <!-- WAQF in Manuscript Light (#FAF7F0) -->
+    <g fill="#FAF7F0">
+      <!-- W -->
+      <path d="M 0 0 L 14 0 L 29 58 L 43 10 L 53 10 L 67 58 L 82 0 L 96 0 L 74 84 L 61 84 L 48 36 L 35 84 L 22 84 Z"/>
+      <!-- A -->
+      <path fill-rule="evenodd" d="M 142 0 L 156 0 L 188 84 L 173 84 L 165 62 L 133 62 L 125 84 L 110 84 Z M 149 18 L 137 50 L 161 50 Z"/>
+      <!-- Q ring -->
+      <path fill-rule="evenodd" d="M 244 0 A 42 42 0 1 0 244 84 A 42 42 0 1 0 244 0 Z M 244 14 A 28 28 0 1 1 244 70 A 28 28 0 1 1 244 14 Z"/>
+      <!-- F -->
+      <path d="M 304 0 L 366 0 L 366 13 L 318 13 L 318 36 L 358 36 L 358 49 L 318 49 L 318 84 L 304 84 Z"/>
+    </g>
+    <!-- Q Sovereign Gold Tail Accent -->
+    <path d="M 250 56 L 260 48 L 288 86 L 276 93 Z" fill="url(#goldTextDark)"/>
+
+    <!-- Diamond Divider -->
+    <path d="M 388 35 L 395 42 L 388 49 L 381 42 Z" fill="#1EB980"/>
+
+    <!-- DAO in Sovereign Gold -->
+    <g fill="url(#goldTextDark)">
+      <!-- D -->
+      <path fill-rule="evenodd" d="M 412 0 L 448 0 C 471 0 486 17 486 42 C 486 67 471 84 448 84 L 412 84 Z M 426 13 L 447 13 C 463 13 472 25 472 42 C 472 59 463 71 447 71 L 426 71 Z"/>
+      <!-- A -->
+      <path fill-rule="evenodd" d="M 534 0 L 548 0 L 580 84 L 565 84 L 557 62 L 525 62 L 517 84 L 502 84 Z M 541 18 L 529 50 L 553 50 Z"/>
+      <!-- O -->
+      <path fill-rule="evenodd" d="M 636 0 A 42 42 0 1 0 636 84 A 42 42 0 1 0 636 0 Z M 636 14 A 28 28 0 1 1 636 70 A 28 28 0 1 1 636 14 Z"/>
+    </g>
+  </g>
+
+  <!-- Institutional Tagline & Compliance Pillars -->
+  <text x="350" y="216" fill="#ECC774" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="3.5">
+    INSTITUTIONAL ON-CHAIN ENDOWMENT PROTOCOL
+  </text>
+
+  <!-- Bottom Governance Strip -->
+  <g transform="translate(350, 238)">
+    <rect x="0" y="0" width="166" height="32" rx="16" fill="#108458" fill-opacity="0.22" stroke="#1EB980" stroke-opacity="0.48" stroke-width="1.2"/>
+    <text x="83" y="21" text-anchor="middle" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">AAOIFI SS 60</text>
+
+    <rect x="180" y="0" width="144" height="32" rx="16" fill="#D4A84F" fill-opacity="0.16" stroke="#D4A84F" stroke-opacity="0.48" stroke-width="1.2"/>
+    <text x="252" y="21" text-anchor="middle" fill="#F5D993" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">PSAK 412</text>
+
+    <rect x="338" y="0" width="184" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.2"/>
+    <text x="430" y="21" text-anchor="middle" fill="#E6ECE9" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">DIGITAL HISBAH</text>
+
+    <rect x="536" y="0" width="196" height="32" rx="16" fill="#108458" fill-opacity="0.18" stroke="#1EB980" stroke-opacity="0.4" stroke-width="1.2"/>
+    <text x="634" y="21" text-anchor="middle" fill="#A7F3D0" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">4x KAP WTP AUDIT</text>
+  </g>
+</svg>

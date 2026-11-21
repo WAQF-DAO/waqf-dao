@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500" role="img" aria-labelledby="x-header-title">
+  <title id="x-header-title">WAQF DAO — X / GitHub Organization Header Banner</title>
+  <defs>
+    <radialGradient id="xBg" cx="65%" cy="35%" r="85%">
+      <stop offset="0%" stop-color="#14372D"/>
+      <stop offset="60%" stop-color="#091B16"/>
+      <stop offset="100%" stop-color="#06110E"/>
+    </radialGradient>
+    <linearGradient id="xGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DC97"/>
+      <stop offset="50%" stop-color="#D4A84F"/>
+      <stop offset="100%" stop-color="#9B7222"/>
+    </linearGradient>
+    <linearGradient id="xEmerald" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48E5A8"/>
+      <stop offset="100%" stop-color="#0E724C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1500" height="500" fill="url(#xBg)"/>
+  <!-- Architectural subtle grid on left safe zone -->
+  <g stroke="#D4A84F" stroke-opacity="0.08" fill="none">
+    <rect x="-80" y="80" width="380" height="380" rx="20"/>
+    <rect x="-80" y="80" width="380" height="380" rx="20" transform="rotate(45 110 270)"/>
+    <rect x="1210" y="-80" width="360" height="360" rx="20"/>
+    <rect x="1210" y="-80" width="360" height="360" rx="20" transform="rotate(45 1390 100)"/>
+  </g>
+
+  <!-- Main Content Positioned Safely Right of Profile Avatar Overlap -->
+  <g transform="translate(360, 114) scale(0.54)">
+    <rect x="16" y="16" width="480" height="480" rx="108" fill="#071511" stroke="url(#xGold)" stroke-width="4"/>
+    <rect x="124" y="124" width="264" height="264" rx="14" fill="#081713" stroke="url(#xGold)" stroke-width="7"/>
+    <rect x="124" y="124" width="264" height="264" rx="14" fill="#081713" fill-opacity="0.7" stroke="url(#xGold)" stroke-width="7" transform="rotate(45 256 256)"/>
+    <path d="M 184 358 L 184 256 C 184 204 218 173 256 146 C 294 173 328 204 328 256 L 328 358 Z"
+          fill="#040C0A" stroke="url(#xGold)" stroke-width="6.5" stroke-linejoin="round"/>
+    <path d="M 256 178 L 286 208 L 256 238 L 226 208 Z" fill="url(#xGold)"/>
+    <path d="M 256 190 L 274 208 L 256 226 L 238 208 Z" fill="url(#xEmerald)"/>
+    <path d="M 241 240 C 223 252 216 266 216 286 L 216 340" fill="none" stroke="#108458" stroke-width="11" stroke-linecap="round"/>
+    <line x1="256" y1="246" x2="256" y2="342" stroke="url(#xEmerald)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M 271 240 C 289 252 296 266 296 286 L 296 340" fill="none" stroke="url(#xGold)" stroke-width="11" stroke-linecap="round"/>
+    <line x1="170" y1="358" x2="342" y2="358" stroke="url(#xGold)" stroke-width="6.5" stroke-linecap="round"/>
+  </g>
+
+  <g transform="translate(676, 138) scale(1.06)">
+    <g fill="#FAF7F0">
+      <path d="M 0 0 L 14 0 L 29 58 L 43 10 L 53 10 L 67 58 L 82 0 L 96 0 L 74 84 L 61 84 L 48 36 L 35 84 L 22 84 Z"/>
+      <path fill-rule="evenodd" d="M 142 0 L 156 0 L 188 84 L 173 84 L 165 62 L 133 62 L 125 84 L 110 84 Z M 149 18 L 137 50 L 161 50 Z"/>
+      <path fill-rule="evenodd" d="M 244 0 A 42 42 0 1 0 244 84 A 42 42 0 1 0 244 0 Z M 244 14 A 28 28 0 1 1 244 70 A 28 28 0 1 1 244 14 Z"/>
+      <path d="M 304 0 L 366 0 L 366 13 L 318 13 L 318 36 L 358 36 L 358 49 L 318 49 L 318 84 L 304 84 Z"/>
+    </g>
+    <path d="M 250 56 L 260 48 L 288 86 L 276 93 Z" fill="url(#xGold)"/>
+    <path d="M 388 35 L 395 42 L 388 49 L 381 42 Z" fill="#1EB980"/>
+    <g fill="url(#xGold)">
+      <path fill-rule="evenodd" d="M 412 0 L 448 0 C 471 0 486 17 486 42 C 486 67 471 84 448 84 L 412 84 Z M 426 13 L 447 13 C 463 13 472 25 472 42 C 472 59 463 71 447 71 L 426 71 Z"/>
+      <path fill-rule="evenodd" d="M 534 0 L 548 0 L 580 84 L 565 84 L 557 62 L 525 62 L 517 84 L 502 84 Z M 541 18 L 529 50 L 553 50 Z"/>
+      <path fill-rule="evenodd" d="M 636 0 A 42 42 0 1 0 636 84 A 42 42 0 1 0 636 0 Z M 636 14 A 28 28 0 1 1 636 70 A 28 28 0 1 1 636 14 Z"/>
+    </g>
+  </g>
+
+  <text x="678" y="274" fill="#ECC774" font-family="'Plus Jakarta Sans', sans-serif" font-size="22" font-weight="700" letter-spacing="3">
+    NEO-PASAR MADINAH  ·  INSTITUTIONAL ON-CHAIN ENDOWMENT
+  </text>
+  <text x="678" y="314" fill="#A6BAB3" font-family="'Plus Jakarta Sans', sans-serif" font-size="18">
+    Ownerless Smart Vaults (AAOIFI SS 60)  ·  Odoo 20.0 Merkle Proofs (PSAK 412)  ·  AI CIO Sentinel
+  </text>
+  <g transform="translate(678, 344)">
+    <rect x="0" y="0" width="210" height="34" rx="17" fill="#108458" fill-opacity="0.24" stroke="#1EB980" stroke-opacity="0.5"/>
+    <text x="105" y="22" text-anchor="middle" fill="#6EE7B7" font-family="'JetBrains Mono', monospace" font-size="13.5" font-weight="700">4x KAP WTP (2022–2025)</text>
+
+    <rect x="224" y="0" width="224" height="34" rx="17" fill="#D4A84F" fill-opacity="0.18" stroke="#D4A84F" stroke-opacity="0.5"/>
+    <text x="336" y="22" text-anchor="middle" fill="#F5D993" font-family="'JetBrains Mono', monospace" font-size="13.5" font-weight="700">STBPN BWI 3.3.00386</text>
+
+    <rect x="462" y="0" width="250" height="34" rx="17" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.2"/>
+    <text x="587" y="22" text-anchor="middle" fill="#FAF7F0" font-family="'JetBrains Mono', monospace" font-size="13.5" font-weight="700">waqf-dao-explorer.pages.dev</text>
+  </g>
+</svg>

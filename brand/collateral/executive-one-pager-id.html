@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAQF DAO — Lembar Fakta Eksekutif (Executive One-Pager ID)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #e5dfd1;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      color: #11221d;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #faf7f0;
+      box-shadow: 0 24px 60px rgba(6, 17, 14, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    @media print {
+      body { padding: 0; background: #faf7f0; }
+      .sheet { box-shadow: none; width: 100%; min-height: 100vh; }
+      .no-print { display: none !important; }
+    }
+    .hero {
+      background: linear-gradient(135deg, #0c241d 0%, #06110e 100%);
+      color: #faf7f0;
+      padding: 22px 28px 20px;
+      border-bottom: 3px solid #d4a84f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .hero-left { display: flex; align-items: center; gap: 16px; }
+    .hero-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 34px;
+      line-height: 1;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+    .hero-title span { color: #ecc774; }
+    .hero-sub {
+      margin: 5px 0 0;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6ee7b7;
+    }
+    .hero-tagline {
+      margin: 6px 0 0;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+      color: #ecc774;
+    }
+    .hero-badges {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 6px;
+    }
+    .pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 168, 79, 0.45);
+      background: rgba(212, 168, 79, 0.14);
+      color: #f5d993;
+      white-space: nowrap;
+    }
+    .pill--em {
+      border-color: rgba(30, 185, 128, 0.45);
+      background: rgba(16, 132, 88, 0.22);
+      color: #6ee7b7;
+    }
+    .content {
+      padding: 18px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .kpi {
+      background: #0b1d18;
+      color: #faf7f0;
+      border: 1px solid rgba(212, 168, 79, 0.3);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .kpi-lbl { font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #a6bab3; font-weight: 700; }
+    .kpi-val { font-family: 'Instrument Serif', Georgia, serif; font-size: 22px; color: #ecc774; margin: 3px 0 2px; line-height: 1.05; }
+    .kpi-sub { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; color: #6ee7b7; }
+    .cols-2 { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 14px; }
+    .card {
+      background: #ffffff;
+      border: 1px solid #dfd6c3;
+      border-radius: 10px;
+      padding: 12px 14px;
+    }
+    .card--parch { background: #f2ecdf; }
+    h2 {
+      margin: 0 0 8px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #0b6643;
+      border-bottom: 1.5px solid #dfd6c3;
+      padding-bottom: 5px;
+    }
+    p, li { font-size: 10px; line-height: 1.48; margin: 0 0 6px; color: #243933; }
+    ul { padding-left: 15px; margin: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 9.5px; }
+    th {
+      text-align: left;
+      padding: 5px 6px;
+      background: #0b1d18;
+      color: #ecc774;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5px;
+      text-transform: uppercase;
+    }
+    td { padding: 5px 6px; border-bottom: 1px solid #e7e0cf; vertical-align: top; }
+    tr:nth-child(even) td { background: #faf7f0; }
+    .mono { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+    .wf-bar {
+      display: flex;
+      height: 22px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 8px 0;
+      border: 1px solid #cfc4ae;
+    }
+    .wf-s { width: 40%; background: #1b4d3e; color: #fff; font-size: 8.5px; font-weight: 700; display: grid; place-items: center; }
+    .wf-m { width: 50.5%; background: #108458; color: #fff; font-size: 8.5px; font-weight: 700; display: grid; place-items: center; }
+    .wf-n { width: 9.5%; background: #d4a84f; color: #06110e; font-size: 8.5px; font-weight: 800; display: grid; place-items: center; }
+    .footer {
+      background: #06110e;
+      color: #a6bab3;
+      padding: 12px 28px;
+      font-size: 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 2px solid #d4a84f;
+    }
+    .footer strong { color: #ecc774; }
+    .print-bar {
+      max-width: 210mm;
+      margin: 0 auto 14px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .print-btn {
+      background: #0b1d18;
+      color: #ecc774;
+      border: 1px solid #d4a84f;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="print-bar no-print">
+    <button class="print-btn" onclick="window.print()">Cetak / Simpan PDF (A4)</button>
+  </div>
+  <article class="sheet">
+    <header class="hero">
+      <div class="hero-left">
+        <svg viewBox="0 0 512 512" width="68" height="68" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="16" y="16" width="480" height="480" rx="108" fill="#0A1B16" stroke="#D4A84F" stroke-width="6"/>
+          <rect x="124" y="124" width="264" height="264" rx="14" fill="#081713" stroke="#D4A84F" stroke-width="8"/>
+          <rect x="124" y="124" width="264" height="264" rx="14" fill="none" stroke="#D4A84F" stroke-width="8" transform="rotate(45 256 256)"/>
+          <path d="M 184 358 L 184 256 C 184 204 218 173 256 146 C 294 173 328 204 328 256 L 328 358 Z" fill="#040C0A" stroke="#ECC774" stroke-width="7"/>
+          <path d="M 256 178 L 286 208 L 256 238 L 226 208 Z" fill="#D4A84F"/>
+          <path d="M 256 190 L 274 208 L 256 226 L 238 208 Z" fill="#1EB980"/>
+          <path d="M 241 240 C 223 252 216 266 216 286 L 216 340" fill="none" stroke="#108458" stroke-width="11" stroke-linecap="round"/>
+          <line x1="256" y1="246" x2="256" y2="342" stroke="#1EB980" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 271 240 C 289 252 296 266 296 286 L 296 340" fill="none" stroke="#ECC774" stroke-width="11" stroke-linecap="round"/>
+          <line x1="170" y1="358" x2="342" y2="358" stroke="#D4A84F" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h1 class="hero-title">WAQF <span>DAO</span></h1>
+          <p class="hero-sub">Lembar Fakta Institusional · Protokol Wakaf Produktif &amp; Audit PSAK 412</p>
+          <p class="hero-tagline">Tahbisul Ashli wa Tasbilul Manfa'ah — Menjaga Pokok Abadi, Mengalirkan Manfaat Terverifikasi</p>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="pill">STBPN BWI 3.3.00386 · GENESIS EPOCH 2026-11</span>
+        <span class="pill pill--em">4× KAP WTP (2022–2025) · AAOIFI SS 60 · UU 41/2004</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="kpi-grid">
+        <div class="kpi">
+          <div class="kpi-lbl">Proyeksi Aset Wakaf FY26</div>
+          <div class="kpi-val">Rp 1,404 M</div>
+          <div class="kpi-sub">Selisih Neraca PSAK 412 = Rp 0</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">Rekam Jejak Audit Eksternal</div>
+          <div class="kpi-val">4× KAP WTP</div>
+          <div class="kpi-sub">Wajar Tanpa Pengecualian 2022–2025</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">Proyek Nautera (WPUD)</div>
+          <div class="kpi-val">18,02% p.a.</div>
+          <div class="kpi-sub">Ijarah + Qardh Hasan · RRR 0,42:1</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">Air Bersih (WPAIR)</div>
+          <div class="kpi-val">SROI 4,11×</div>
+          <div class="kpi-sub">41 Klaster · 26.357 Warga</div>
+        </div>
+      </section>
+
+      <section class="cols-2">
+        <div class="card">
+          <h2>1. Tesis Neo-Pasar Madinah &amp; Arsitektur Lima Lapis</h2>
+          <p><strong>WAQF DAO</strong> mematahkan dua kelemahan ekosistem wakaf modern—pembukuan manual yang tertutup maupun proyek kripto spekulatif tanpa pijakan aset riil—melalui integrasi langsung ke pembukuan <strong>Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)</strong> dan operator <strong>PT Produktif Indonesia Berdaya (PT PIB)</strong>:</p>
+          <ul>
+            <li><strong>Layer 1 (Inflow &amp; Identitas Non-Spekulatif):</strong> Jalur perbankan LKS-PWU IDR &amp; aset stabil terjamin penuh, dipasangkan dengan <strong>ERC-5192 Soulbound DID</strong> anti-jual-beli.</li>
+            <li><strong>Layer 2 (Brankas Nir-Pemilik AAOIFI SS 60 2/4/2):</strong> Memisahkan pokok abadi (<em>Mu'abbad</em>, aset neto permanen tanpa fungsi <code>sweep</code> admin) dan wakaf berjangka (<em>Mu'aqqat</em>, liabilitas temporer PSAK 412 Par. 23).</li>
+            <li><strong>Layer 3 (Dual-Chamber Digital Hisbah):</strong> Voting kuadratik anti-<em>whale</em> (Kamar 1) + hak veto mutlak <strong>Dewan Pengawas Syariah (DPS)</strong> 21 hari + <em>Zero-Burn Deposit Capture</em> (jaminan proposal sitaan mengalir 100% ke pokok wakaf).</li>
+            <li><strong>Layer 4 (Odoo 20.0 ERP Merkle Oracle &amp; UU PDP):</strong> Notarisasi neraca 5 komponen ke Layer-2 dengan komitmen <em>salted SHA-256</em> (patuh UU No. 27/2022).</li>
+            <li><strong>Layer 5 (AI CIO Forensic Sentinel 9-Poin):</strong> Menolak otomatis anomali biologis (misal FCR mustahil 0,56), mark-up CAPEX, atau risiko asimetris (RRR &gt; 0,50:1) sebelum dana keluar.</li>
+          </ul>
+        </div>
+
+        <div class="card card--parch">
+          <h2>2. Waterfall Hukum Wakaf &amp; Trajektori Neraca PSAK 412</h2>
+          <p><strong>Penegakan Otomatis <code>PSAK412WaterfallSplitter.sol</code> (Kasus Nautera):</strong></p>
+          <div class="wf-bar">
+            <div class="wf-s">40% Sinking Fund</div>
+            <div class="wf-m">50,5% Mauquf 'Alaih (BAST)</div>
+            <div class="wf-n">9,5%</div>
+          </div>
+          <p style="font-size: 9px; margin-bottom: 10px;">Hak Nazhir terkunci <strong>&le; 10,0%</strong> (UU No. 41/2004 Pasal 12). Dana <em>Mauquf 'Alaih</em> ditahan di escrow hingga bukti fisik <strong>BAST</strong> ditandatangani.</p>
+
+          <table>
+            <thead>
+              <tr><th>Tahun</th><th>Status Audit</th><th>Total Aset</th><th>Temp. (Mu'aqqat)</th><th>Neto (Mu'abbad)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono">2024</td><td>KAP WTP</td><td class="mono">Rp 1.011,60 Jt</td><td class="mono">Rp 25,00 Jt</td><td class="mono">Rp 986,60 Jt</td></tr>
+              <tr><td class="mono">2025</td><td>KAP WTP</td><td class="mono">Rp 1.114,36 Jt</td><td class="mono">Rp 50,00 Jt</td><td class="mono">Rp 1.064,36 Jt</td></tr>
+              <tr><td class="mono">2026</td><td>Proyeksi</td><td class="mono">Rp 1.404,88 Jt</td><td class="mono">Rp 63,00 Jt</td><td class="mono">Rp 1.341,88 Jt</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3. Portofolio 5 Kolam Wakaf Genesis (Epoch 2026-11 · Selisih Rekonsiliasi Rp 0)</h2>
+        <table>
+          <thead>
+            <tr><th>Kode Pool</th><th>Sektor Aset Riil Produktif</th><th>Struktur Akad Pelindung Pokok</th><th>Alokasi Pokok</th><th>Imbal Hasil / Dampak</th><th>SROI</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">WPUD</td>
+              <td>Akuakultur Udang Vaname Pesisir (<em>Nautera</em>)</td>
+              <td>Hibrida Ijarah Rp 532,4 Jt + Qardh Hasan Rp 300 Jt</td>
+              <td class="mono">Rp 532.400.000</td>
+              <td><strong>18,02% p.a.</strong> bersih (Skor Risiko AI CIO 14/100)</td>
+              <td class="mono">3,85×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPUM</td>
+              <td>Wakaf Produktif Multisektor &amp; Sukuk Negara</td>
+              <td>CWLS Seri SWR Kemenkeu/BI + UMKM Terjamin</td>
+              <td class="mono">Rp 315.000.000</td>
+              <td><strong>6,75% p.a.</strong> lantai bebas risiko negara</td>
+              <td class="mono">5,04×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPAIR</td>
+              <td>Infrastruktur Air Bersih Komunal Tenaga Surya</td>
+              <td>Istisna' Pembangunan + Cadangan O&amp;M Komunal</td>
+              <td class="mono">Rp 268.480.000</td>
+              <td><strong>41 klaster aktif</strong> · <strong>26.357 warga</strong> (BAST)</td>
+              <td class="mono">4,11×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPPAL</td>
+              <td>Dana Abadi Kemanusiaan &amp; Beasiswa Yatim</td>
+              <td>Pokok Terpagar Abadi (Hanya Hasil Disalurkan)</td>
+              <td class="mono">Rp 154.000.000</td>
+              <td><strong>7,20% p.a.</strong> penyaluran terikat</td>
+              <td class="mono">4,25×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPMAS</td>
+              <td>Masjid, Madrasah &amp; Pendidikan Al-Qur'an</td>
+              <td>Ijarah Atap Surya + Wakaf Kafalah Pengajar</td>
+              <td class="mono">Rp 135.000.000</td>
+              <td><strong>8,10% p.a.</strong> penghematan kWh &amp; kafalah</td>
+              <td class="mono">3,90×</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="cols-2">
+        <div class="card">
+          <h2>4. Uji Forensik AI CIO Sentinel (Nautera vs Bioflok)</h2>
+          <p>Proposal eksternal bermasalah ditolak otomatis sebelum dana tersentuh: <strong>Highland Biofloc (Skor Risiko 92/100 · REJECT_NO_GO)</strong> gagal pada klaim FCR mustahil <code>0,56</code>, mark-up CAPEX <code>+83,6%</code>, suhu air <code>&lt;21°C</code>, serta RRR <code>6,83:1</code>. Sebaliknya, <strong>Nautera (<code>WPUD</code>)</strong> lolos pada skor risiko <strong>14/100 (PASS)</strong> dengan penilaian <em>Istibdal</em> <code>108,4%</code>.</p>
+        </div>
+        <div class="card card--parch">
+          <h2>5. Federasi Ekosistem &amp; Kepatuhan Regulasi</h2>
+          <p>Terbuka bagi anggota <strong>Forum Wakaf Produktif (FWP)</strong> dan <strong>Asosiasi Nazhir Indonesia (ANI)</strong> via modul Odoo 20.0 <code>waqf_dao_oracle</code> (LGPL-3). Patuh <strong>POJK 23/2025</strong> (non-derivatif spekulatif), <strong>UU 41/2004</strong>, dan <strong>UU PDP 27/2022</strong>.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div><strong>Jangkar Ekosistem:</strong> Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386) · PT PIB · FWP · ANI</div>
+      <div class="mono" style="color:#6ee7b7;">Verifikasi Langsung: https://waqf-dao-explorer.pages.dev</div>
+    </footer>
+  </article>
+</body>
+</html>

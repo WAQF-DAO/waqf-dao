@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img" aria-labelledby="waqf-dao-stacked-title">
+  <title id="waqf-dao-stacked-title">WAQF DAO — Stacked Institutional Crest</title>
+  <defs>
+    <radialGradient id="stackBg" cx="50%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#123229"/>
+      <stop offset="58%" stop-color="#091A15"/>
+      <stop offset="100%" stop-color="#06110E"/>
+    </radialGradient>
+    <linearGradient id="goldStack" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6DC97"/>
+      <stop offset="48%" stop-color="#D4A84F"/>
+      <stop offset="100%" stop-color="#9A7020"/>
+    </linearGradient>
+    <linearGradient id="emeraldStack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#48E5A8"/>
+      <stop offset="100%" stop-color="#0D6E49"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="800" rx="48" fill="url(#stackBg)"/>
+  <rect x="18" y="18" width="764" height="764" rx="36" fill="none" stroke="url(#goldStack)" stroke-width="2" stroke-opacity="0.35"/>
+
+  <!-- Centered Emblem Seal -->
+  <g transform="translate(195, 76) scale(0.8)">
+    <rect x="108" y="108" width="296" height="296" rx="16" fill="#071612" stroke="url(#goldStack)" stroke-width="8"/>
+    <rect x="108" y="108" width="296" height="296" rx="16" fill="#071612" fill-opacity="0.82" stroke="url(#goldStack)" stroke-width="8" transform="rotate(45 256 256)"/>
+    <g fill="#ECC774">
+      <circle cx="256" cy="46" r="5.5"/>
+      <circle cx="404" cy="108" r="5.5"/>
+      <circle cx="466" cy="256" r="5.5"/>
+      <circle cx="404" cy="404" r="5.5"/>
+      <circle cx="256" cy="466" r="5.5"/>
+      <circle cx="108" cy="404" r="5.5"/>
+      <circle cx="46" cy="256" r="5.5"/>
+      <circle cx="108" cy="108" r="5.5"/>
+    </g>
+    <path d="M 176 370 L 176 256 C 176 198 214 162 256 132 C 298 162 336 198 336 256 L 336 370 Z"
+          fill="#050E0B" stroke="url(#goldStack)" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M 256 168 L 289 201 L 256 234 L 223 201 Z" fill="url(#goldStack)"/>
+    <path d="M 256 181 L 276 201 L 256 221 L 236 201 Z" fill="url(#emeraldStack)"/>
+    <circle cx="256" cy="201" r="5" fill="#FAF7F0"/>
+    <path d="M 239 237 C 219 250 212 266 212 288 L 212 349" fill="none" stroke="#108458" stroke-width="12" stroke-linecap="round"/>
+    <line x1="256" y1="243" x2="256" y2="352" stroke="url(#emeraldStack)" stroke-width="15.5" stroke-linecap="round"/>
+    <path d="M 273 237 C 293 250 300 266 300 288 L 300 349" fill="none" stroke="#ECC774" stroke-width="12" stroke-linecap="round"/>
+    <line x1="160" y1="370" x2="352" y2="370" stroke="url(#goldStack)" stroke-width="7" stroke-linecap="round"/>
+    <line x1="198" y1="388" x2="314" y2="388" stroke="#1EB980" stroke-width="4.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Centered Wordmark (width 678 * 0.88 = 597 -> x = 101.5) -->
+  <g transform="translate(102, 524) scale(0.88)">
+    <g fill="#FAF7F0">
+      <path d="M 0 0 L 14 0 L 29 58 L 43 10 L 53 10 L 67 58 L 82 0 L 96 0 L 74 84 L 61 84 L 48 36 L 35 84 L 22 84 Z"/>
+      <path fill-rule="evenodd" d="M 142 0 L 156 0 L 188 84 L 173 84 L 165 62 L 133 62 L 125 84 L 110 84 Z M 149 18 L 137 50 L 161 50 Z"/>
+      <path fill-rule="evenodd" d="M 244 0 A 42 42 0 1 0 244 84 A 42 42 0 1 0 244 0 Z M 244 14 A 28 28 0 1 1 244 70 A 28 28 0 1 1 244 14 Z"/>
+      <path d="M 304 0 L 366 0 L 366 13 L 318 13 L 318 36 L 358 36 L 358 49 L 318 49 L 318 84 L 304 84 Z"/>
+    </g>
+    <path d="M 250 56 L 260 48 L 288 86 L 276 93 Z" fill="url(#goldStack)"/>
+    <path d="M 388 35 L 395 42 L 388 49 L 381 42 Z" fill="#1EB980"/>
+    <g fill="url(#goldStack)">
+      <path fill-rule="evenodd" d="M 412 0 L 448 0 C 471 0 486 17 486 42 C 486 67 471 84 448 84 L 412 84 Z M 426 13 L 447 13 C 463 13 472 25 472 42 C 472 59 463 71 447 71 L 426 71 Z"/>
+      <path fill-rule="evenodd" d="M 534 0 L 548 0 L 580 84 L 565 84 L 557 62 L 525 62 L 517 84 L 502 84 Z M 541 18 L 529 50 L 553 50 Z"/>
+      <path fill-rule="evenodd" d="M 636 0 A 42 42 0 1 0 636 84 A 42 42 0 1 0 636 0 Z M 636 14 A 28 28 0 1 1 636 70 A 28 28 0 1 1 636 14 Z"/>
+    </g>
+  </g>
+
+  <text x="400" y="648" text-anchor="middle" fill="#ECC774" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4">
+    TAHBISUL ASHLI WA TASBILUL MANFA'AH
+  </text>
+  <line x1="190" y1="674" x2="610" y2="674" stroke="#D4A84F" stroke-opacity="0.32" stroke-width="1.5"/>
+  <text x="400" y="708" text-anchor="middle" fill="#A6BAB3" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="600" letter-spacing="1.5">
+    AAOIFI SS 60  ·  PSAK 412  ·  UU NO. 41/2004  ·  DIGITAL HISBAH
+  </text>
+</svg>

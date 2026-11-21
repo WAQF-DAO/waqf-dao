@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAQF DAO — Institutional Executive Fact Sheet (EN)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #e5dfd1;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      color: #11221d;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .sheet {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: #faf7f0;
+      box-shadow: 0 24px 60px rgba(6, 17, 14, 0.25);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    @media print {
+      body { padding: 0; background: #faf7f0; }
+      .sheet { box-shadow: none; width: 100%; min-height: 100vh; }
+      .no-print { display: none !important; }
+    }
+    .hero {
+      background: linear-gradient(135deg, #0c241d 0%, #06110e 100%);
+      color: #faf7f0;
+      padding: 22px 28px 20px;
+      border-bottom: 3px solid #d4a84f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+    .hero-left { display: flex; align-items: center; gap: 16px; }
+    .hero-title {
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-size: 34px;
+      line-height: 1;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+    .hero-title span { color: #ecc774; }
+    .hero-sub {
+      margin: 5px 0 0;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #6ee7b7;
+    }
+    .hero-tagline {
+      margin: 6px 0 0;
+      font-family: 'Instrument Serif', Georgia, serif;
+      font-style: italic;
+      font-size: 15px;
+      color: #ecc774;
+    }
+    .hero-badges { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+    .pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(212, 168, 79, 0.45);
+      background: rgba(212, 168, 79, 0.14);
+      color: #f5d993;
+      white-space: nowrap;
+    }
+    .pill--em {
+      border-color: rgba(30, 185, 128, 0.45);
+      background: rgba(16, 132, 88, 0.22);
+      color: #6ee7b7;
+    }
+    .content { padding: 18px 28px; display: flex; flex-direction: column; gap: 14px; flex: 1; }
+    .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .kpi {
+      background: #0b1d18;
+      color: #faf7f0;
+      border: 1px solid rgba(212, 168, 79, 0.3);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+    .kpi-lbl { font-size: 8.5px; text-transform: uppercase; letter-spacing: 0.06em; color: #a6bab3; font-weight: 700; }
+    .kpi-val { font-family: 'Instrument Serif', Georgia, serif; font-size: 22px; color: #ecc774; margin: 3px 0 2px; line-height: 1.05; }
+    .kpi-sub { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; color: #6ee7b7; }
+    .cols-2 { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 14px; }
+    .card { background: #ffffff; border: 1px solid #dfd6c3; border-radius: 10px; padding: 12px 14px; }
+    .card--parch { background: #f2ecdf; }
+    h2 {
+      margin: 0 0 8px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #0b6643;
+      border-bottom: 1.5px solid #dfd6c3;
+      padding-bottom: 5px;
+    }
+    p, li { font-size: 10px; line-height: 1.48; margin: 0 0 6px; color: #243933; }
+    ul { padding-left: 15px; margin: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 9.5px; }
+    th {
+      text-align: left;
+      padding: 5px 6px;
+      background: #0b1d18;
+      color: #ecc774;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8.5px;
+      text-transform: uppercase;
+    }
+    td { padding: 5px 6px; border-bottom: 1px solid #e7e0cf; vertical-align: top; }
+    tr:nth-child(even) td { background: #faf7f0; }
+    .mono { font-family: 'JetBrains Mono', monospace; font-weight: 700; }
+    .wf-bar {
+      display: flex;
+      height: 22px;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 8px 0;
+      border: 1px solid #cfc4ae;
+    }
+    .wf-s { width: 40%; background: #1b4d3e; color: #fff; font-size: 8.5px; font-weight: 700; display: grid; place-items: center; }
+    .wf-m { width: 50.5%; background: #108458; color: #fff; font-size: 8.5px; font-weight: 700; display: grid; place-items: center; }
+    .wf-n { width: 9.5%; background: #d4a84f; color: #06110e; font-size: 8.5px; font-weight: 800; display: grid; place-items: center; }
+    .footer {
+      background: #06110e;
+      color: #a6bab3;
+      padding: 12px 28px;
+      font-size: 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 2px solid #d4a84f;
+    }
+    .footer strong { color: #ecc774; }
+    .print-bar { max-width: 210mm; margin: 0 auto 14px; display: flex; justify-content: flex-end; }
+    .print-btn {
+      background: #0b1d18;
+      color: #ecc774;
+      border: 1px solid #d4a84f;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="print-bar no-print">
+    <button class="print-btn" onclick="window.print()">Print / Save A4 PDF</button>
+  </div>
+  <article class="sheet">
+    <header class="hero">
+      <div class="hero-left">
+        <svg viewBox="0 0 512 512" width="68" height="68" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="16" y="16" width="480" height="480" rx="108" fill="#0A1B16" stroke="#D4A84F" stroke-width="6"/>
+          <rect x="124" y="124" width="264" height="264" rx="14" fill="#081713" stroke="#D4A84F" stroke-width="8"/>
+          <rect x="124" y="124" width="264" height="264" rx="14" fill="none" stroke="#D4A84F" stroke-width="8" transform="rotate(45 256 256)"/>
+          <path d="M 184 358 L 184 256 C 184 204 218 173 256 146 C 294 173 328 204 328 256 L 328 358 Z" fill="#040C0A" stroke="#ECC774" stroke-width="7"/>
+          <path d="M 256 178 L 286 208 L 256 238 L 226 208 Z" fill="#D4A84F"/>
+          <path d="M 256 190 L 274 208 L 256 226 L 238 208 Z" fill="#1EB980"/>
+          <path d="M 241 240 C 223 252 216 266 216 286 L 216 340" fill="none" stroke="#108458" stroke-width="11" stroke-linecap="round"/>
+          <line x1="256" y1="246" x2="256" y2="342" stroke="#1EB980" stroke-width="14" stroke-linecap="round"/>
+          <path d="M 271 240 C 289 252 296 266 296 286 L 296 340" fill="none" stroke="#ECC774" stroke-width="11" stroke-linecap="round"/>
+          <line x1="170" y1="358" x2="342" y2="358" stroke="#D4A84F" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h1 class="hero-title">WAQF <span>DAO</span></h1>
+          <p class="hero-sub">Institutional Fact Sheet · On-Chain Endowment Protocol</p>
+          <p class="hero-tagline">Tahbisul Ashli wa Tasbilul Manfa'ah — Preserving Principal Forever, Liberating Usufruct</p>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="pill">STBPN BWI 3.3.00386 · GENESIS EPOCH 2026-11</span>
+        <span class="pill pill--em">4× KAP WTP (2022–2025) · AAOIFI SS 60 · PSAK 412</span>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="kpi-grid">
+        <div class="kpi">
+          <div class="kpi-lbl">FY26 Projected Assets</div>
+          <div class="kpi-val">IDR 1.404 B</div>
+          <div class="kpi-sub">PSAK 412 Diff = IDR 0</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">External KAP Audit Streak</div>
+          <div class="kpi-val">4× KAP WTP</div>
+          <div class="kpi-sub">Unqualified FY 2022–2025</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">Nautera RWA (WPUD)</div>
+          <div class="kpi-val">18.02% p.a.</div>
+          <div class="kpi-sub">Ijarah + Qardh · RRR 0.42:1</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-lbl">Clean Water (WPAIR)</div>
+          <div class="kpi-val">SROI 4.11×</div>
+          <div class="kpi-sub">41 Clusters · 26,357 People</div>
+        </div>
+      </section>
+
+      <section class="cols-2">
+        <div class="card">
+          <h2>1. Five-Layer Institutional Protocol Architecture</h2>
+          <p>Anchored in the audited operations of <strong>Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386)</strong> and operating SPV <strong>PT Produktif Indonesia Berdaya (PT PIB)</strong>, WAQF DAO eliminates volatile token speculation and opaque off-chain custody:</p>
+          <ul>
+            <li><strong>Layer 1 — Dual-Rail &amp; Non-Transferable Identity:</strong> Domestic LKS-PWU IDR &amp; 1:1 regulated rails paired with <strong>ERC-5192 Soulbound DIDs</strong>.</li>
+            <li><strong>Layer 2 — Ownerless Vaults (AAOIFI SS 60 Cl. 2/4/2):</strong> Permanent <em>Mu'abbad</em> principal locks with zero admin <code>sweep()</code>, segregated from refundable <em>Mu'aqqat</em> liabilities (PSAK 412 Par. 23).</li>
+            <li><strong>Layer 3 — Dual-Chamber Digital Hisbah:</strong> Quadratic DID reputation voting (Chamber 1) + 21-day asymmetric <strong>Shariah Supervisory Board (SSB)</strong> veto + <em>Zero-Burn Deposit Capture</em>.</li>
+            <li><strong>Layer 4 — Odoo 20.0 ERP Merkle Bridge:</strong> Domain-separated SHA-256 roots (<code>0x00</code>/<code>0x01</code>) with <strong>UU PDP</strong> salted PII commitments.</li>
+            <li><strong>Layer 5 — 9-Point AI CIO Forensic Sentinel:</strong> Rejects biological impossibilities (e.g., <code>0.56</code> FCR), +83.6% CAPEX markups, and asymmetric risk before deployment.</li>
+          </ul>
+        </div>
+
+        <div class="card card--parch">
+          <h2>2. Statutory Waterfall &amp; Audited PSAK 412 Ledger</h2>
+          <p><strong>On-Chain <code>PSAK412WaterfallSplitter.sol</code> (Nautera Allocation):</strong></p>
+          <div class="wf-bar">
+            <div class="wf-s">40% Sinking Fund</div>
+            <div class="wf-m">50.5% Mauquf 'Alaih (BAST)</div>
+            <div class="wf-n">9.5%</div>
+          </div>
+          <p style="font-size: 9px; margin-bottom: 10px;">Hard-enforces the statutory <strong>&le; 10.0% Nazhir ceiling</strong> (Law No. 41/2004 Art. 12). Beneficiary disbursements stay locked in escrow until field <strong>BAST</strong> attestation.</p>
+
+          <table>
+            <thead>
+              <tr><th>Year</th><th>Audit Status</th><th>Total Assets</th><th>Temp. (Mu'aqqat)</th><th>Net (Mu'abbad)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="mono">2024</td><td>KAP WTP</td><td class="mono">IDR 1,011.60M</td><td class="mono">IDR 25.00M</td><td class="mono">IDR 986.60M</td></tr>
+              <tr><td class="mono">2025</td><td>KAP WTP</td><td class="mono">IDR 1,114.36M</td><td class="mono">IDR 50.00M</td><td class="mono">IDR 1,064.36M</td></tr>
+              <tr><td class="mono">2026</td><td>Projected</td><td class="mono">IDR 1,404.88M</td><td class="mono">IDR 63.00M</td><td class="mono">IDR 1,341.88M</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>3. Five Genesis Endowment Pools (Epoch 2026-11 · Balance Diff = IDR 0)</h2>
+        <table>
+          <thead>
+            <tr><th>Ticker</th><th>Productive Real-World Sector</th><th>Principal-Protection Structure</th><th>Allocated Principal</th><th>Net Yield / Verified Impact</th><th>SROI</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mono">WPUD</td>
+              <td>Coastal Vannamei Aquaculture RWA (<em>Nautera</em>)</td>
+              <td>Hybrid Ijarah IDR 532.4M + Qardh Hasan IDR 300M</td>
+              <td class="mono">IDR 532,400,000</td>
+              <td><strong>18.02% p.a.</strong> net cash (AI CIO Risk Score 14/100)</td>
+              <td class="mono">3.85×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPUM</td>
+              <td>Multi-Sector Productive &amp; Sovereign CWLS</td>
+              <td>Sovereign CWLS SWR Series + Collateralized MSMEs</td>
+              <td class="mono">IDR 315,000,000</td>
+              <td><strong>6.75% p.a.</strong> sovereign risk-free floor</td>
+              <td class="mono">5.04×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPAIR</td>
+              <td>Community Solar Clean Water Infrastructure</td>
+              <td>Istisna' Infrastructure + Community O&amp;M Reserve</td>
+              <td class="mono">IDR 268,480,000</td>
+              <td><strong>41 active clusters</strong> · <strong>26,357 beneficiaries</strong></td>
+              <td class="mono">4.11×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPPAL</td>
+              <td>Humanitarian Perpetual Endowment</td>
+              <td>Ring-Fenced Principal (Restricted Net Yield Only)</td>
+              <td class="mono">IDR 154,000,000</td>
+              <td><strong>7.20% p.a.</strong> relief &amp; orphan scholarships</td>
+              <td class="mono">4.25×</td>
+            </tr>
+            <tr>
+              <td class="mono">WPMAS</td>
+              <td>Mosque, Madrasah &amp; Qur'anic Education</td>
+              <td>Solar Roof Ijarah + Productive Madrasah Waqf</td>
+              <td class="mono">IDR 135,000,000</td>
+              <td><strong>8.10% p.a.</strong> OPEX kWh savings &amp; teacher stipends</td>
+              <td class="mono">3.90×</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="cols-2">
+        <div class="card">
+          <h2>4. AI CIO Forensic Screening Proof</h2>
+          <p>Before capital deployment, proposals pass 9 checks. The <strong>Highland Biofloc proposal (Risk 92/100 · REJECT_NO_GO)</strong> was blocked due to impossible <code>0.56</code> FCR, <code>+83.6%</code> CAPEX markup, cold water <code>&lt;21°C</code>, and asymmetric <code>6.83:1</code> RRR, whereas <strong>Nautera (WPUD)</strong> passed at <strong>14/100</strong> and <code>108.4%</code> <em>Istibdal</em> appraisal.</p>
+        </div>
+        <div class="card card--parch">
+          <h2>5. Federated Nazhir Adoption &amp; Legal Nexus</h2>
+          <p>Open-source Odoo 20.0 addon <code>waqf_dao_oracle</code> (LGPL-3) enables members of <strong>Forum Wakaf Produktif (FWP)</strong> and <strong>Asosiasi Nazhir Indonesia (ANI)</strong> to publish zero-diff PSAK 412 Merkle proofs while remaining compliant with <strong>POJK 23/2025</strong> and <strong>UU PDP</strong>.</p>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div><strong>Institutional Anchors:</strong> Yayasan Amal Produktif Indonesia (STBPN BWI 3.3.00386) · PT PIB · FWP · ANI</div>
+      <div class="mono" style="color:#6ee7b7;">Verify Live: https://waqf-dao-explorer.pages.dev</div>
+    </footer>
+  </article>
+</body>
+</html>

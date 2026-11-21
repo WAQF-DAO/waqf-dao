@@ -6,19 +6,22 @@ import {
   GitBranch,
   Landmark,
   Layers,
+  Palette,
   Scale,
   ShieldCheck,
   Vote,
 } from 'lucide-react';
 import { Lang } from './data/genesisData';
 import { UI_COPY } from './i18n/translations';
+import { WaqfLogoMark } from './components/WaqfLogoMark';
 import { TabVaults } from './components/TabVaults';
 import { TabWaterfall } from './components/TabWaterfall';
 import { TabHisbah } from './components/TabHisbah';
 import { TabMerkleVerifier } from './components/TabMerkleVerifier';
 import { TabForensicConsole } from './components/TabForensicConsole';
+import { TabBrandKit } from './components/TabBrandKit';
 
-type ActiveTab = 'vaults' | 'waterfall' | 'hisbah' | 'merkle' | 'forensic';
+type ActiveTab = 'vaults' | 'waterfall' | 'hisbah' | 'merkle' | 'forensic' | 'brand';
 
 export const App: React.FC = () => {
   const [lang, setLang] = useState<Lang>('en');
@@ -32,6 +35,7 @@ export const App: React.FC = () => {
     { id: 'hisbah', label: copy.tabs.hisbah, icon: <Vote size={16} /> },
     { id: 'merkle', label: copy.tabs.merkle, icon: <GitBranch size={16} /> },
     { id: 'forensic', label: copy.tabs.forensic, icon: <Activity size={16} /> },
+    { id: 'brand', label: copy.tabs.brand, icon: <Palette size={16} /> },
   ];
 
   return (
@@ -39,8 +43,8 @@ export const App: React.FC = () => {
       {/* Top Institutional Header */}
       <header className="top-header">
         <div className="brand-cluster">
-          <div className="brand-seal" aria-hidden="true">
-            <ShieldCheck size={24} />
+          <div className="brand-seal">
+            <WaqfLogoMark size={46} />
           </div>
           <div>
             <h1 className="brand-title">{copy.portalTitle}</h1>
@@ -138,6 +142,7 @@ export const App: React.FC = () => {
         {activeTab === 'hisbah' && <TabHisbah lang={lang} />}
         {activeTab === 'merkle' && <TabMerkleVerifier lang={lang} />}
         {activeTab === 'forensic' && <TabForensicConsole lang={lang} />}
+        {activeTab === 'brand' && <TabBrandKit lang={lang} />}
       </main>
 
       {/* Institutional Footer */}
