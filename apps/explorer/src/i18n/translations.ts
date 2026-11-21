@@ -150,6 +150,7 @@ export const UI_COPY: Record<
       pillar3Desc: string;
       logosTitle: string;
       logosSubtitle: string;
+      downloadAvatarBtn: string;
       downloadOgBtn: string;
       poolsTitle: string;
       poolsSubtitle: string;
@@ -338,10 +339,11 @@ export const UI_COPY: Record<
       pillar3Title: '3. Three-Channel PSAK 412 Waterfall',
       pillar3Desc:
         'Flows cleanly into 40% Sinking Fund, 50.5% Mauquf ‘Alaih (BAST-gated), and <=10% statutory Nazhir governance.',
-      logosTitle: 'Master Vector Logo Suite (SVG & PNG)',
+      logosTitle: 'Master Vector & Raster Logo Suite (SVG, PNG & JPG)',
       logosSubtitle:
-        'Font-independent custom vector paths suitable for GitHub, Odoo ERP, KAP audit books, and institutional media.',
-      downloadOgBtn: 'Download 1200×630 OpenGraph PNG',
+        'Circle-safe opaque GitHub/social avatars, custom vector SVGs, and upload-ready PNG exports.',
+      downloadAvatarBtn: 'GitHub Avatar PNG (1024×1024)',
+      downloadOgBtn: 'GitHub Preview PNG (1280×640)',
       poolsTitle: '5 Genesis Endowment Pool Emblems',
       poolsSubtitle: 'Dedicated sector crests for WPUD, WPUM, WPAIR, WPPAL, and WPMAS deployments.',
       paletteTitle: 'Canonical Color Tokens',
@@ -533,10 +535,11 @@ export const UI_COPY: Record<
       pillar3Title: '3. Tiga Aliran Air Terjun PSAK 412',
       pillar3Desc:
         'Mengalir terukur ke 40% Sinking Fund, 50,5% Mauquf ‘Alaih (gerbang BAST), serta <=10% hak pengelola Nazhir.',
-      logosTitle: 'Paket Logo Vektor Master (SVG & PNG)',
+      logosTitle: 'Paket Logo Vektor & Raster Siap Unggah (SVG, PNG & JPG)',
       logosSubtitle:
-        'Huruf vektor independen yang tampil tajam di GitHub, modul Odoo ERP, laporan audit KAP, hingga media sosial.',
-      downloadOgBtn: 'Unduh OpenGraph PNG (1200×630)',
+        'Avatar PNG penuh anti-terpotong lingkaran untuk GitHub/Sosmed, vektor SVG, serta PNG siap pakai.',
+      downloadAvatarBtn: 'Avatar GitHub PNG (1024×1024)',
+      downloadOgBtn: 'GitHub Preview PNG (1280×640)',
       poolsTitle: '5 Lencana Kolam Wakaf Genesis',
       poolsSubtitle: 'Emblem sektoral khusus untuk WPUD, WPUM, WPAIR, WPPAL, dan WPMAS.',
       paletteTitle: 'Sistem Warna Kanonik',

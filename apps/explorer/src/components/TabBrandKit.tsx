@@ -20,6 +20,27 @@ const COLOR_TOKENS = [
 
 const LOGO_ASSETS = [
   {
+    id: 'profile-avatar',
+    titleEn: 'GitHub & Social Profile Avatar (Circle-Safe PNG)',
+    titleId: 'Avatar Profil GitHub & Sosmed (PNG Lingkaran Penuh)',
+    path: '/brand/logos/waqf-dao-profile-avatar-1024.png',
+    pngPath: '/brand/logos/waqf-dao-profile-avatar-512.png',
+    pngLabel: '512px PNG',
+    bgClass: 'dark-surface',
+    format: '1024×1024 & 512×512 Opaque PNG',
+    primaryIsRaster: true,
+  },
+  {
+    id: 'medallion-3d',
+    titleEn: '3D Architectural Medallion Key Visual',
+    titleId: 'Visual Kunci Medali 3D Arsitektural',
+    path: '/brand/visuals/hero-key-visual.jpg',
+    bgClass: 'dark-surface',
+    format: '1024×1024 JPG (Social / Profile Ready)',
+    primaryIsRaster: true,
+    rasterExt: 'JPG',
+  },
+  {
     id: 'mark',
     titleEn: 'Primary Medina Hisbah Seal',
     titleId: 'Segel Utama Medina Hisbah (Dark)',
@@ -29,28 +50,40 @@ const LOGO_ASSETS = [
     format: '512×512 SVG · 1024px PNG',
   },
   {
+    id: 'mark-transparent',
+    titleEn: 'Transparent Emblem Mark',
+    titleId: 'Segel Transparan (Overlay / Dokumen)',
+    path: '/brand/logos/waqf-dao-mark-transparent.svg',
+    pngPath: '/brand/logos/waqf-dao-mark-transparent-1024.png',
+    bgClass: 'dark-surface',
+    format: '512×512 SVG · 1024px PNG',
+  },
+  {
     id: 'horiz-dark',
     titleEn: 'Horizontal Institutional Lockup (Dark)',
     titleId: 'Lockup Horizontal Institusional (Gelap)',
     path: '/brand/logos/waqf-dao-horizontal-dark.svg',
+    pngPath: '/brand/logos/waqf-dao-horizontal-dark.png',
     bgClass: 'dark-surface',
-    format: '1200×340 SVG',
+    format: '1200×340 SVG & PNG',
   },
   {
     id: 'horiz-light',
     titleEn: 'Horizontal Parchment Lockup (Print / KAP)',
     titleId: 'Lockup Horizontal Perkamen (Cetak / KAP)',
     path: '/brand/logos/waqf-dao-horizontal-light.svg',
+    pngPath: '/brand/logos/waqf-dao-horizontal-light.png',
     bgClass: 'light-surface',
-    format: '1200×340 SVG',
+    format: '1200×340 SVG & PNG',
   },
   {
     id: 'stacked',
     titleEn: 'Stacked Sovereign Crest',
     titleId: 'Lambang Bertumpuk (Podium / Laporan)',
     path: '/brand/logos/waqf-dao-stacked.svg',
+    pngPath: '/brand/logos/waqf-dao-stacked.png',
     bgClass: 'dark-surface',
-    format: '800×800 SVG',
+    format: '800×800 SVG & PNG',
   },
   {
     id: 'mono-gold',
@@ -143,14 +176,24 @@ export const TabBrandKit: React.FC<TabBrandKitProps> = ({ lang }) => {
             </h3>
             <p className="card-subtitle">{copy.logosSubtitle}</p>
           </div>
-          <a
-            className="btn btn--gold"
-            href="/brand/social/og-banner.png"
-            download="waqf-dao-og-banner.png"
-          >
-            <Download size={15} />
-            {copy.downloadOgBtn}
-          </a>
+          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <a
+              className="btn btn--primary"
+              href="/brand/logos/waqf-dao-profile-avatar-1024.png"
+              download="waqf-dao-profile-avatar-1024.png"
+            >
+              <Download size={15} />
+              {copy.downloadAvatarBtn}
+            </a>
+            <a
+              className="btn btn--gold"
+              href="/brand/social/github-social-preview-1280x640.png"
+              download="waqf-dao-github-social-1280x640.png"
+            >
+              <Download size={15} />
+              {copy.downloadOgBtn}
+            </a>
+          </div>
         </div>
 
         <div className="brand-asset-grid">
@@ -173,12 +216,12 @@ export const TabBrandKit: React.FC<TabBrandKitProps> = ({ lang }) => {
                 <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
                   <a className="btn btn--primary" href={asset.path} download>
                     <Download size={13} />
-                    SVG
+                    {asset.primaryIsRaster ? asset.rasterExt || '1024px PNG' : 'SVG'}
                   </a>
                   {asset.pngPath && (
                     <a className="btn btn--ghost-light" href={asset.pngPath} download>
                       <Download size={13} />
-                      PNG
+                      {asset.pngLabel || 'PNG'}
                     </a>
                   )}
                 </div>
